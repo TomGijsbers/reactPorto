@@ -74,3 +74,33 @@ h1, h2, h3 {
 }
 
 
+/* 🔹 Lijstitems met goede spacing */
+.feature-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 1rem;
+    padding: 10px 0;
+}
+
+/* 🔹 Responsive styling */
+@media screen and (max-width: 768px) {
+    .construction-card {
+        padding: 20px;
+        width: 95%;
+    }
+
+    .construction-card h1 {
+        font-size: 1.8rem;
+    }
+
+    .feature-list {
+        font-size: 0.9rem;
+    }
+
+    .feature-list li {
+        font-size: 0.9rem;
+        gap: 8px;
+    }
+}
+

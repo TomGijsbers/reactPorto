@@ -49,7 +49,7 @@ const ArtGallery = () => {
   return (
     <Container className="gallery-container">
       <h3 className="gallery-title">Mijn Kunstwerken</h3>
-      <p>Ik ga graag naar musea om wat mooie schilderijen te checken. Hier een paar die ik tof vond en heb vastgelegd.</p>
+      <p>Als kunstliefhebber heb ik al een aantal musea bezocht. Hieronder een kleine inkijk in de schilderijen die ik heb kunnen bewonderen.</p>
 
       <Row>
         {artworks.map((art, index) => (
