@@ -1,0 +1,38 @@
+.gallery-container {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.gallery-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.gallery-item {
+    padding: 10px;
+}
+
+/* 🔹 Zorg dat de hele card groter wordt bij hover */
+.card {
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Hele kaart vergroot */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Meer schaduw bij hover */
+}
+
+/* 🔹 Afbeeldingen netjes houden binnen de kaart */
+.gallery-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0; /* Bovenste hoeken afgerond */
+}
+
+/* 🔹 Tekst in de kaart opmaken */
+.card-body {
+    padding: 15px;
+    text-align: center;
+}

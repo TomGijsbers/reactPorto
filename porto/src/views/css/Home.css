@@ -1,0 +1,76 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #bcddcf !important; /* Lichtgrijze achtergrond voor beter contrast */
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 100vw; 
+    text-align: center;
+    flex-direction: column;
+}
+
+/* Styling voor de kaart met een 3D-effect */
+.construction-card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    max-width: 900px; /* 👈 Groter maken */
+    width: 90%; /* Zorg dat het responsief blijft */
+    margin: 50px auto;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover effect voor extra 3D-effect */
+.construction-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 15px 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+/* 🔹 Duidelijkere titel en subtitel */
+.construction-card h1 {
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+
+.construction-img {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px;
+    border-radius: 10px; /* Kleine afgeronde hoeken voor een modern effect */
+}
+
+.feature-list {
+    text-align: left;
+    max-width: 800px; /* 👈 Breder maken */
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    list-style: none;
+    padding: 20px;
+}
+
+.feature-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px; /* Ruimte tussen icoon en tekst */
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 12px 0; /* Meer ruimte tussen items */
+}
+
+
