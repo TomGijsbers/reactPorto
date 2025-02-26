@@ -1,14 +1,12 @@
-import Home from './views/Home'
+import AppRoutes from "./Routes";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-
 function App() {
-
   return (
-    <>
-      <Home/>
-    </>
-  )
+    <div>
+      <AppRoutes />
+    </div>
+  );
 }
 
-export default App
+export default App;

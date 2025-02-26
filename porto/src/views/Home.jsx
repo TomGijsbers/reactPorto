@@ -5,10 +5,10 @@ const Home = () => {
     return (
         <>
             <NavBar /> 
-            {/* <div className="home-container">
+            <div className="home-container">
                 <h1>Welkom op mijn portfolio</h1>
                 <p>Hier komt straks meer content.</p>
-            </div> */}
+            </div>
 
            {/* Kaart met 'Under Construction' melding */}
            <div className="construction-card">
