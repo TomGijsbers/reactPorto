@@ -1,0 +1,112 @@
+/* 🔹 Toggle Switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 24px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #4caf50;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+/* 🔹 Label naast de toggle */
+.theme-label {
+    margin-left: 10px;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+/* 🔹 Light Mode (default) */
+body {
+    background-color: #bcddcf !important;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+/* 🔹 Dark Mode */
+body.dark-mode {
+    background-color: #ab2b2b !important;
+    color: #e0e0e0;
+}
+
+/* Update card styles for dark mode */
+.dark-mode .construction-card {
+    background: #2a2a2a;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+    color: #e0e0e0;
+}
+
+.dark-mode .construction-card h1,
+.dark-mode .construction-card p,
+.dark-mode .construction-card li {
+    color: #e0e0e0;
+}
+
+.dark-mode tabs {
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+}
+
+.dark-mode a {
+    color: #66b2ff;
+}
+.dark-mode p {
+    color: #000000;
+}
+.dark-mode gallery-body {
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+}
+
+/* 🔹 ThemeToggle netjes uitlijnen in de NavBar */
+.theme-toggle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+}
+
+.theme-toggle .theme-label {
+    color: inherit;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.theme-toggle input {
+    cursor: pointer;
+}
