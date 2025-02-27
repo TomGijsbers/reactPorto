@@ -1,7 +1,8 @@
 body {
     font-family: 'Roboto', sans-serif;
     color: #333;
-    background-color: #bcddcf !important; /* Lichtgrijze achtergrond voor beter contrast */
+    /* background-color: #bcddcf !important;  */
+
 }
 
 h1, h2, h3 {

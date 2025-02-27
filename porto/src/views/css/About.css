@@ -46,3 +46,60 @@ button {
 }
 
 
+/* 🔹 Standaard styling voor Tabs */
+.nav-tabs .nav-link {
+    color: #333;
+    border: none;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-tabs .nav-link.active {
+    color: #004225;
+    border-bottom: 3px solid #004225;
+    background: none;
+}
+
+/* 🔹 Dark Mode voor Tabs */
+/* 🔹 Dark Mode voor Tabs */
+.dark-mode .tabs-container {
+    background: #1e1e1e; /* Donkerdere achtergrond voor beter contrast */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.6); /* Meer schaduw voor 3D-effect */
+    border-radius: 12px;
+}
+
+.dark-mode .nav-tabs .nav-link {
+    color: #b3b3b3; /* Lichtgrijze tekst voor betere leesbaarheid */
+    background-color: #2a2a2a;
+    border: 1px solid #444;
+    border-radius: 5px;
+}
+
+.dark-mode .nav-tabs .nav-link:hover {
+    background-color: #3a3a3a;
+    color: #fff;
+}
+
+.dark-mode .nav-tabs .nav-link.active {
+    color: #66b2ff;
+    background-color: #3a3a3a;
+    border-bottom: 3px solid #66b2ff;
+}
+
+.dark-mode .tab-content {
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+    border: 1px solid #444;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* 🔹 Verbeterde leesbaarheid voor tekst */
+.dark-mode h3,
+.dark-mode p,
+.dark-mode li {
+    color: #e0e0e0;
+}
+
+.dark-mode strong {
+    color: #ffffff;
+}
+
