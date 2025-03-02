@@ -13,6 +13,7 @@ const NavBar = () => {
           <Nav.Link as={Link} to="/">Home</Nav.Link>
           <Nav.Link as={Link} to="/about">About</Nav.Link>
           <Nav.Link as={Link} to="/art">Art</Nav.Link>
+          <Nav.Link as={Link} to="/game">Game</Nav.Link>
         </Nav>
 
         {/* 🔹 Toggle voor Dark/Light Mode rechts in de navbar */}
