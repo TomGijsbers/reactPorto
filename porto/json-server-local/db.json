@@ -1,10 +1,10 @@
 {
     "quotes": [
       {
-        "person": "Oscar Wilde",
-        "sentence": "Een van de bekendste kunststromingen is ______.",
-        "options": ["Surrealisme", "Rockmuziek", "Biologie"],
-        "correct": "Surrealisme"
+        "person": "Pablo Picasso",
+        "sentence": "Everything you can _____ is real.",
+        "options": ["think off", "imagine", "Believe"],
+        "correct": "imagine"
       },
       {
         "person": "Oscar Wilde",
@@ -55,6 +55,12 @@
         "correct": "Present"
       },
       {
+        "person": "Lao Tzu",
+        "sentence": "A journey of a thousand miles begins with a ______.",
+        "options": ["Leap", "Step", "Thought"],
+        "correct": "Step"
+      },
+      {
         "person": "Buddha",
         "sentence": "The mind is everything. What you think you ______.",
         "options": ["Believe", "Become", "Create"],
@@ -72,12 +78,7 @@
         "options": ["Important", "Worth living", "Meaningful"],
         "correct": "Worth living"
       },
-      {
-        "person": "Lao Tzu",
-        "sentence": "A journey of a thousand miles begins with a ______.",
-        "options": ["Leap", "Step", "Thought"],
-        "correct": "Step"
-      },
+
       {
         "person": "Lao Tzu",
         "sentence": "When I let go of what I am, I become what I ______.",
@@ -85,10 +86,10 @@
         "correct": "Seek"
       },
       {
-        "person": "Friedrich Nietzsche",
-        "sentence": "He who has a why to live can bear almost any ______.",
-        "options": ["Burden", "Pain", "Struggle"],
-        "correct": "How"
+        "person": "Confucius",
+        "sentence": "The man who asks a question is a fool for a minute, the man who does not ask is a fool for a ______.",
+        "options": ["Day", "Week", "Lifetime"],
+        "correct": "Lifetime"
       },
       {
         "person": "Friedrich Nietzsche",
@@ -103,10 +104,10 @@
         "correct": "Stop"
       },
       {
-        "person": "Confucius",
-        "sentence": "The man who asks a question is a fool for a minute, the man who does not ask is a fool for a ______.",
-        "options": ["Day", "Week", "Lifetime"],
-        "correct": "Lifetime"
+        "person": "Friedrich Nietzsche",
+        "sentence": "That which does not kill us makes us ______.",
+        "options": ["Weaker", "Stronger", "Resilient"],
+        "correct": "Stronger"
       },
       {
         "person": "Plato",
