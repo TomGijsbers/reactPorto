@@ -61,7 +61,7 @@ const ArtGallery = () => {
                 alt={art.title} 
                 className="gallery-img" 
               />
-              <Card.Body>
+              <Card.Body className="gallery-body">
                 <Card.Title>{art.title}</Card.Title>
                 <Card.Text><strong>{art.artist}</strong></Card.Text>
               </Card.Body>
