@@ -1,0 +1,11 @@
+.construction-card {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    max-width: 900px; /* 👈 Groter maken */
+    width: 90%; /* Zorg dat het responsief blijft */
+    margin: 50px auto;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
