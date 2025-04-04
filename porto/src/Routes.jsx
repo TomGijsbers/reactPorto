@@ -2,7 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./views/Home";
 import About from "./views/About";
 import Art from "./views/Art";
-import Game from "./views/Game";
+import Game from "./views/game"; // Add this import
 
 const AppRoutes = () => {
   return (

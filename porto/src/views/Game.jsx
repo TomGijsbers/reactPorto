@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import NavBar from "../component/Nav";
 import { getQoutes } from "../apis/philoApi";
+import "./css/Game.css"; // Make sure to import the CSS
 
 const Game = () => {
     const [quotesList, setQuotesList] = useState([]);
@@ -82,8 +83,9 @@ const Game = () => {
                                 {feedback}
                             </p>
                         )}
-                        {/* 🔹 Next Question Button */}
-                        <button className="next-button" onClick={nextQuote} disabled={!selectedAnswer}>Volgende vraag</button>
+                        <button className="next-button" onClick={nextQuote} disabled={!selectedAnswer}>
+                            Volgende vraag
+                        </button>
                     </div>
                 ) : (
                     <p>Geen quotes beschikbaar.</p>
