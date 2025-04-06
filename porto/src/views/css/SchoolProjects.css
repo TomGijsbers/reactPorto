@@ -1,0 +1,120 @@
+/* Premium styling for school projects section */
+
+.projects-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 24px;
+  }
+  
+  .projects-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    color: #1a2138;
+    position: relative;
+    display: inline-block;
+    letter-spacing: -0.5px;
+  }
+  
+  .projects-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #004225, #007143);
+    border-radius: 2px;
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 24px;
+  }
+  
+  .error-message {
+    color: #e53e3e;
+    margin-bottom: 16px;
+    padding: 12px 16px;
+    border-radius: 8px;
+    background: rgba(229, 62, 62, 0.1);
+    border: 1px solid rgba(229, 62, 62, 0.2);
+  }
+  
+  .loading-skeleton {
+    background: linear-gradient(90deg, #f1f5f9, #e2e8f0, #f1f5f9);
+    background-size: 200% 100%;
+    animation: loading-wave 1.5s ease-in-out infinite;
+    border-radius: 8px;
+    height: 400px;
+  }
+  
+  @keyframes loading-wave {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+  }
+  
+  .empty-message {
+    text-align: center;
+    padding: 40px 0;
+    color: #64748b;
+    font-size: 1.1rem;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1024px) {
+    .projects-grid {
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+    
+    .projects-title {
+      font-size: 2.2rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .projects-grid {
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 20px;
+    }
+    
+    .projects-title {
+      font-size: 2rem;
+    }
+    
+    .projects-container {
+      padding: 32px 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .projects-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .projects-title {
+      font-size: 1.8rem;
+    }
+    
+    .projects-container {
+      padding: 24px 16px;
+    }
+  }
+  
+  /* Dark mode styles */
+  body.dark-mode .projects-title {
+    color: #f1f5f9;
+  }
+  
+  body.dark-mode .projects-title::after {
+    background: linear-gradient(90deg, #14b56a, #35d78f);
+  }
+  
+  body.dark-mode .empty-message {
+    color: #94a3b8;
+  }
+  
+  body.dark-mode .loading-skeleton {
+    background: linear-gradient(90deg, #334155, #1e293b, #334155);
+  }
