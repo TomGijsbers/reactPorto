@@ -39,7 +39,7 @@ h1, h2, h3 {
     font-size: 3.5rem;
     font-weight: 800;
     margin-bottom: 1rem;
-    background: linear-gradient(90deg, #3a7bd5, #00d2ff);
+    background: linear-gradient(90deg, #004225, #007143); /* British Racing Green gradient */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     line-height: 1.1;
@@ -56,20 +56,20 @@ h1, h2, h3 {
 .hero-cta {
     display: inline-block;
     padding: 1rem 2rem;
-    background: linear-gradient(135deg, #3a7bd5, #00d2ff);
+    background: linear-gradient(135deg, #004225, #007143); /* British Racing Green gradient */
     color: white;
     border-radius: 12px;
     font-weight: 600;
     font-size: 1.2rem;
     text-decoration: none;
     transition: all 0.3s ease;
-    box-shadow: 0 10px 20px rgba(58, 123, 213, 0.2);
+    box-shadow: 0 10px 20px rgba(0, 66, 37, 0.2);
     margin: 1rem;
 }
 
 .hero-cta:hover {
     transform: translateY(-3px);
-    box-shadow: 0 15px 25px rgba(58, 123, 213, 0.25);
+    box-shadow: 0 15px 25px rgba(0, 66, 37, 0.25);
 }
 
 /* Decorative circles for hero section */
@@ -79,7 +79,7 @@ h1, h2, h3 {
     width: 400px;
     height: 400px;
     border-radius: 50%;
-    background: linear-gradient(135deg, rgba(58, 123, 213, 0.1), rgba(0, 210, 255, 0.05));
+    background: linear-gradient(135deg, rgba(0, 66, 37, 0.1), rgba(0, 113, 67, 0.05));
     top: -150px;
     right: -100px;
     z-index: 1;
@@ -91,7 +91,7 @@ h1, h2, h3 {
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    background: linear-gradient(135deg, rgba(58, 123, 213, 0.08), rgba(0, 210, 255, 0.04));
+    background: linear-gradient(135deg, rgba(0, 66, 37, 0.08), rgba(0, 113, 67, 0.04));
     bottom: -100px;
     left: -50px;
     z-index: 1;
@@ -142,7 +142,7 @@ h1, h2, h3 {
     transform: translateX(-50%);
     width: 80px;
     height: 3px;
-    background: linear-gradient(90deg, #3a7bd5, #00d2ff);
+    background: linear-gradient(90deg, #004225, #007143); /* British Racing Green gradient */
     border-radius: 2px;
 }
 
@@ -185,12 +185,12 @@ h1, h2, h3 {
 
 .feature-list li:hover {
     transform: translateX(5px);
-    color: #3a7bd5;
+    color: #004225; /* British Racing Green */
 }
 
 .feature-list li::before {
     content: '✦';
-    color: #3a7bd5;
+    color: #004225; /* British Racing Green */
     font-size: 1.3rem;
 }
 
@@ -239,7 +239,7 @@ h1, h2, h3 {
 }
 
 .dark-mode .construction-card h1::after {
-    background: linear-gradient(90deg, #38bdf8, #0ea5e9);
+    background: linear-gradient(90deg, #14b56a, #35d78f); /* Light British Racing Green gradient */
 }
 
 .dark-mode .feature-list li {
@@ -247,9 +247,9 @@ h1, h2, h3 {
 }
 
 .dark-mode .feature-list li:hover {
-    color: #38bdf8;
+    color: #14b56a; /* Light British Racing Green */
 }
 
 .dark-mode .feature-list li::before {
-    color: #38bdf8;
+    color: #14b56a; /* Light British Racing Green */
 }

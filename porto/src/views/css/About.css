@@ -44,12 +44,12 @@
 }
 
 .nav-tabs .nav-link:hover {
-    color: #3a7bd5;
-    background-color: rgba(58, 123, 213, 0.05);
+    color: #004225; /* British Racing Green */
+    background-color: rgba(0, 66, 37, 0.05);
 }
 
 .nav-tabs .nav-link.active {
-    color: #3a7bd5;
+    color: #004225; /* British Racing Green */
     font-weight: 700;
     background: transparent;
     border-bottom: none;
@@ -63,7 +63,7 @@
     transform: translateX(-50%);
     width: 60%;
     height: 3px;
-    background: linear-gradient(90deg, #3a7bd5, #00d2ff);
+    background: linear-gradient(90deg, #004225, #007143); /* British Racing Green gradient */
     border-radius: 2px;
     z-index: 2;
 }
@@ -91,7 +91,7 @@
     left: 0;
     width: 60px;
     height: 3px;
-    background: linear-gradient(90deg, #3a7bd5, #00d2ff);
+    background: linear-gradient(90deg, #004225, #007143); /* British Racing Green gradient */
     border-radius: 2px;
 }
 
@@ -138,8 +138,8 @@
 }
 
 .form-control:focus {
-    border-color: #3a7bd5;
-    box-shadow: 0 0 0 3px rgba(58, 123, 213, 0.2);
+    border-color: #004225; /* British Racing Green */
+    box-shadow: 0 0 0 3px rgba(0, 66, 37, 0.2);
 }
 
 .form-control::placeholder {
@@ -147,7 +147,7 @@
 }
 
 .btn-primary {
-    background: linear-gradient(135deg, #3a7bd5, #00d2ff);
+    background: linear-gradient(135deg, #004225, #007143); /* British Racing Green gradient */
     border: none;
     padding: 1rem 1.8rem;
     border-radius: 12px;
@@ -155,7 +155,7 @@
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 10px 20px rgba(58, 123, 213, 0.2);
+    box-shadow: 0 10px 20px rgba(0, 66, 37, 0.2);
     letter-spacing: 0.5px;
     margin-top: 1rem;
     width: auto;
@@ -163,14 +163,14 @@
 }
 
 .btn-primary:hover:not(:disabled) {
-    background: linear-gradient(135deg, #2563eb, #0ea5e9);
+    background: linear-gradient(135deg, #003018, #005c37); /* Darker British Racing Green gradient */
     transform: translateY(-3px);
-    box-shadow: 0 15px 25px rgba(58, 123, 213, 0.25);
+    box-shadow: 0 15px 25px rgba(0, 66, 37, 0.25);
 }
 
 .btn-primary:active:not(:disabled) {
     transform: translateY(-1px);
-    box-shadow: 0 5px 15px rgba(58, 123, 213, 0.25);
+    box-shadow: 0 5px 15px rgba(0, 66, 37, 0.25);
 }
 
 .btn-primary:disabled {
@@ -200,17 +200,17 @@
 }
 
 .dark-mode .nav-tabs .nav-link:hover {
-    color: #38bdf8;
-    background-color: rgba(56, 189, 248, 0.1);
+    color: #14b56a; /* Light British Racing Green */
+    background-color: rgba(20, 181, 106, 0.1);
 }
 
 .dark-mode .nav-tabs .nav-link.active {
-    color: #38bdf8;
+    color: #14b56a; /* Light British Racing Green */
     background: transparent;
 }
 
 .dark-mode .nav-tabs .nav-link.active::after {
-    background: linear-gradient(90deg, #38bdf8, #0ea5e9);
+    background: linear-gradient(90deg, #14b56a, #35d78f); /* Light British Racing Green gradient */
 }
 
 .dark-mode .tab-pane h3 {
@@ -219,7 +219,7 @@
 }
 
 .dark-mode .tab-pane h3::after {
-    background: linear-gradient(90deg, #38bdf8, #0ea5e9);
+    background: linear-gradient(90deg, #14b56a, #35d78f); /* Light British Racing Green gradient */
 }
 
 .dark-mode .tab-pane p {
@@ -246,8 +246,8 @@
 }
 
 .dark-mode .form-control:focus {
-    border-color: #38bdf8;
-    box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.2);
+    border-color: #14b56a; /* Light British Racing Green */
+    box-shadow: 0 0 0 3px rgba(20, 181, 106, 0.2);
 }
 
 .dark-mode .form-control::placeholder {
@@ -255,11 +255,11 @@
 }
 
 .dark-mode .btn-primary {
-    background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+    background: linear-gradient(135deg, #14b56a, #35d78f); /* Light British Racing Green gradient */
 }
 
 .dark-mode .btn-primary:hover:not(:disabled) {
-    background: linear-gradient(135deg, #0ea5e9, #0284c7);
+    background: linear-gradient(135deg, #0f9358, #2ac17e);
 }
 
 /* Additional luxury touches */
@@ -270,7 +270,7 @@
 .tab-pane > p:first-of-type::first-letter {
     font-size: 2.5rem;
     font-weight: 700;
-    color: #3a7bd5;
+    color: #004225; /* British Racing Green */
     padding-right: 0.2rem;
     float: left;
     line-height: 1;
@@ -285,7 +285,7 @@
     right: 20px;
     width: 100px;
     height: 100px;
-    background: linear-gradient(135deg, rgba(58, 123, 213, 0.1), rgba(0, 210, 255, 0.05));
+    background: linear-gradient(135deg, rgba(0, 66, 37, 0.1), rgba(0, 113, 67, 0.05));
     border-radius: 50%;
     z-index: 0;
     opacity: 0.5;

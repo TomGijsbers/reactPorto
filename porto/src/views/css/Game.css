@@ -31,7 +31,7 @@
     transform: translateX(-50%);
     width: 80px;
     height: 3px;
-    background: linear-gradient(90deg, #3a7bd5, #00d2ff);
+    background: linear-gradient(90deg, #004225, #007143); /* British Racing Green gradient */
     border-radius: 2px;
 }
 
@@ -76,9 +76,9 @@
 }
 
 .option-item:hover {
-    border-color: #3a7bd5;
+    border-color: #004225; /* British Racing Green */
     transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(58, 123, 213, 0.1);
+    box-shadow: 0 10px 20px rgba(0, 66, 37, 0.1);
 }
 
 .option-item input[type="radio"] {
@@ -122,7 +122,7 @@
     width: 18px;
     height: 18px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #3a7bd5, #00d2ff);
+    background: linear-gradient(135deg, #004225, #007143); /* British Racing Green gradient */
     opacity: 0;
     transition: all 0.3s ease;
 }
@@ -132,18 +132,18 @@
 }
 
 .option-item input[type="radio"]:checked + .option-label:before {
-    border-color: #3a7bd5;
+    border-color: #004225; /* British Racing Green */
     background: white;
 }
 
 .option-item input[type="radio"]:checked ~ .option-label {
-    color: #2b6cb0;
+    color: #004225; /* British Racing Green */
     font-weight: 600;
 }
 
 .option-item input[type="radio"]:checked ~ .option-item {
-    border-color: #3a7bd5;
-    background: rgba(58, 123, 213, 0.05);
+    border-color: #004225; /* British Racing Green */
+    background: rgba(0, 66, 37, 0.05);
 }
 
 .feedback {
@@ -169,7 +169,7 @@
 }
 
 .next-button {
-    background: linear-gradient(135deg, #3a7bd5, #00d2ff);
+    background: linear-gradient(135deg, #004225, #007143); /* British Racing Green gradient */
     color: white;
     border: none;
     padding: 1.2rem 2.5rem;
@@ -178,20 +178,20 @@
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 10px 20px rgba(58, 123, 213, 0.2);
+    box-shadow: 0 10px 20px rgba(0, 66, 37, 0.2);
     letter-spacing: 0.5px;
     margin-top: 1rem;
 }
 
 .next-button:hover:not(:disabled) {
-    background: linear-gradient(135deg, #2563eb, #0ea5e9);
+    background: linear-gradient(135deg, #003018, #005c37); /* Darker British Racing Green gradient */
     transform: translateY(-3px);
-    box-shadow: 0 15px 25px rgba(58, 123, 213, 0.25);
+    box-shadow: 0 15px 25px rgba(0, 66, 37, 0.25);
 }
 
 .next-button:active:not(:disabled) {
     transform: translateY(-1px);
-    box-shadow: 0 5px 15px rgba(58, 123, 213, 0.25);
+    box-shadow: 0 5px 15px rgba(0, 66, 37, 0.25);
 }
 
 .next-button:disabled {
@@ -216,7 +216,7 @@
     height: 24px;
     margin-right: 12px;
     border: 3px solid rgba(203, 213, 224, 0.3);
-    border-top-color: #3a7bd5;
+    border-top-color: #004225; /* British Racing Green */
     border-radius: 50%;
     animation: spinner 0.8s linear infinite;
 }
@@ -258,7 +258,7 @@ p {
     top: -20px;
     left: 0;
     font-size: 6rem;
-    color: rgba(58, 123, 213, 0.1);
+    color: rgba(0, 66, 37, 0.1); /* British Racing Green with opacity */
     font-family: Georgia, serif;
     z-index: -1;
 }
