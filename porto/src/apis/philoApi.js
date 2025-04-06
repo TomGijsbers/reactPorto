@@ -1,7 +1,9 @@
 import axios from "axios";
 // de url die voor jou van toepassing is:
-const base_url = "http://192.168.129.35:3000/quotes";
+const base_url = "https://my-json-server.typicode.com/TomGijsbers/reactPorto/quotes";
 
+
+// http://192.168.129.35:3000/quotes
 
 export const getQoutes = async () => {
     try {
