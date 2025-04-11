@@ -120,52 +120,52 @@
   {
     "id": 1,
     "title": "FloraFocus (Flutter)",
-    "summary": "Mobiele app voor plantenscan & tracking. Gebouwd met Flutter, Unity en Java API."
+    "summary": "Mobiele app voor plantenscan & tracking. Ontwikkeld met Flutter, geïntegreerde Unity AR-module en RESTful API in Java. Agile teamproject met Jira."
   },
   {
     "id": 2,
     "title": "Wezeldrivers (Laravel)",
-    "summary": "Webapp voor fietsclub. Mijn rol: UML, klantcontact, user stories."
+    "summary": "Webapplicatie voor fietsclubbeheer: evenementenplanning, ledenregistratie, communicatie en bestelmodule. Rol: Document Lead (UML, user stories, klantcontact). Agile werkwijze met Jira."
   },
   {
     "id": 3,
     "title": "Procesanalyse - Wilvo Group",
-    "summary": "Productieproces geanalyseerd met BPMN. Bottlenecks opgespoord en verbeterd."
+    "summary": "Productieproces volledig geanalyseerd en verbeterd met BPMN-modellering. Geïmplementeerde optimalisaties hebben bottlenecks gereduceerd en efficiëntie verhoogd."
   },
   {
     "id": 4,
     "title": "React Portfolio",
-    "summary": "Persoonlijke React-website om projecten en vaardigheden te tonen."
+    "summary": "Persoonlijke, responsive portfolio-website gebouwd met React, Bootstrap en geïntegreerde REST API voor dynamische content-presentatie van projecten en vaardigheden."
   },
   {
     "id": 5,
     "title": "Verkeersdata Dashboard (Qlik)",
-    "summary": "Dashboard met verkeersdata en KPI’s. Individueel project."
+    "summary": "Interactief dashboard met verkeersstatistieken, KPI's en geavanceerde datavisualisaties. Individueel uitgevoerd met aandacht voor UX/UI-design."
   },
   {
     "id": 6,
     "title": "Web API Project (FastAPI)",
-    "summary": "REST API met FastAPI + Azure + JavaScript frontend. In team gebouwd."
+    "summary": "RESTful API ontwikkeld in FastAPI, gekoppeld aan Azure-database en responsive frontend in JavaScript en Bootstrap. Teamproject met focus op performance en schaalbaarheid."
   },
   {
     "id": 7,
     "title": "IoT Milieu Monitoring (Python)",
-    "summary": "Sensoren meten licht, druk, temperatuur. MQTT + LED-sturing op Raspberry Pi."
+    "summary": "IoT-systeem met sensoren voor temperatuur, luchtdruk en licht. Gegevensoverdracht via MQTT naar ThingSpeak en lokale Mosquitto-broker, met automatische LED-regeling via PWM-feedbacklus."
   },
   {
     "id": 8,
-    "title": "Sensorbesturing + Ultrasoon",
-    "summary": "PWM & afstandsmeting via Raspberry Pi. RGB-reactie via ultrasoon sensor."
+    "title": "Sensorbesturing met PWM & Ultrasone Meting",
+    "summary": "Interactief Raspberry Pi-project met PWM-gestuurde LED via SPI-ADC en potentiometer, inclusief RGB LED-reacties op afstandmetingen via ultrasone sensor. Teamwerk met real-time signaalverwerking."
   },
   {
     "id": 9,
     "title": "Machine Learning (scikit-learn)",
-    "summary": "Random Forest model gebouwd & geëvalueerd."
+    "summary": "Random Forest Classifier gebouwd en geëvalueerd met scikit-learn. Focus op preprocessing, feature engineering, modeloptimalisatie en performance-analyse via confusion matrix."
   },
   {
     "id": 10,
     "title": "Deep Learning (TensorFlow)",
-    "summary": "Keras/TensorFlow model getraind met klasserapport en evaluatie."
+    "summary": "Neuraal netwerk ontwikkeld met TensorFlow en Keras, inclusief data-analyse, trainingsstrategie, evaluatie en gedetailleerde prestatierapportage via confusion matrix en klasserapport."
   }
 ]
 
