@@ -55,37 +55,65 @@ function JustifiedExample() {
         </Tab>
 
         {/* Contact Tab */}
-<Tab eventKey="contact" title="Contact">
-  <div className="form-container">
-    <h3>Neem contact op</h3>
+        <Tab eventKey="technical" title="Tech Stack">
+  <div className="tech-info-container">
+    <h3>Over deze website</h3>
+    
+    <div className="tech-section mb-4">
+      <h4>Gebruikte technologieën</h4>
+      <ul className="tech-list">
+        <li><strong>Frontend:</strong> React 18, React Bootstrap, CSS3</li>
+        <li><strong>State Management:</strong> React Hooks</li>
+        <li><strong>Styling:</strong> Custom CSS met responsive design/MUI</li>
+        <li><strong>Deployment:</strong> GitHub Pages/ Vercel</li>
+        <li><strong>Version Control:</strong> Git</li>
+      </ul>
+    </div>
 
-    {/* 🔹 Melding dat het formulier nog niet werkt */}
-    <Form.Group className="mb-3">
-      <Form.Text className="text-danger">
-        ⚠️ Het formulier is nog niet werkend, dus een bericht versturen heeft nog geen zin.
-      </Form.Text>
-    </Form.Group>
+    <div className="api-section mb-4">
+      <h4>API Endpoints</h4>
+      <p>Deze website haalt gegevens op van de volgende JSON Server endpoints:</p>
+      
+      <div className="endpoint-card p-3 mb-3 border rounded">
+        <h5>Projecten API</h5>
+        <code className="d-block mb-2">GET https://my-json-server.typicode.com/TomGijsbers/reactPorto/projects</code>
+        <p className="mb-1">Retourneert alle schoolprojecten die worden weergegeven op de home pagina</p>
+        <Button 
+          variant="outline-secondary" 
+          size="sm"
+          href="https://my-json-server.typicode.com/TomGijsbers/reactPorto/projects" 
+          target="_blank"
+          className="mt-2"
+        >
+          Bekijk API respons
+        </Button>
+      </div>
 
-    <Form>
-      <Form.Group className="mb-3" controlId="formName">
-        <Form.Label>Naam</Form.Label>
-        <Form.Control type="text" placeholder="Vul je naam in" />
-      </Form.Group>
+      <div className="endpoint-card p-3 border rounded">
+        <h5>Qoutes/game API</h5>
+        <code className="d-block mb-2">GET https://my-json-server.typicode.com/TomGijsbers/reactPorto/quotes</code>
+        <p className="mb-1">Retourneert qoutes met een missend woord.</p>
+        <Button 
+          variant="outline-secondary" 
+          size="sm" 
+          href="https://my-json-server.typicode.com/TomGijsbers/reactPorto/quotes" 
+          target="_blank"
+          className="mt-2"
+        >
+          Bekijk API respons
+        </Button>
+      </div>
+    </div>
 
-      <Form.Group className="mb-3" controlId="formEmail">
-        <Form.Label>Email</Form.Label>
-        <Form.Control type="email" placeholder="Vul je e-mail in" />
-      </Form.Group>
-
-      <Form.Group className="mb-3" controlId="formMessage">
-        <Form.Label>Bericht</Form.Label>
-        <Form.Control as="textarea" rows={3} placeholder="Typ hier je bericht..." />
-      </Form.Group>
-
-      <Button variant="primary" type="submit" disabled>
-        Versturen
-      </Button>
-    </Form>
+    <div className="architecture-section">
+      <h4>Website architectuur</h4>
+      <p>
+        Deze portfolio website is gebouwd met een componentgebaseerde architectuur 
+        waarbij ieder onderdeel zijn eigen verantwoordelijkheid heeft. De data wordt 
+        opgehaald met fetch API calls naar de JSON Server endpoints, waarna React 
+        Hooks zorgen voor state management en rendering van de componenten.
+      </p>
+    </div>
   </div>
 </Tab>
 

@@ -277,16 +277,85 @@
     margin-right: 0.2rem;
 }
 
-/* Decorative elements */
-.form-container::before {
-    content: '';
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    width: 100px;
-    height: 100px;
-    background: linear-gradient(135deg, rgba(0, 66, 37, 0.1), rgba(0, 113, 67, 0.05));
-    border-radius: 50%;
-    z-index: 0;
-    opacity: 0.5;
+/* Styling voor tech-list zonder bullets with improved alignment */
+.tech-list {
+    list-style-type: none;
+    padding-left: 0;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+  
+.tech-list li {
+    margin-bottom: 0.8rem;
+    padding: 0.8rem 1.2rem;
+    background: rgba(0, 66, 37, 0.05);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(0, 66, 37, 0.08);
+}
+  
+.tech-list li:hover {
+    background: rgba(0, 66, 37, 0.1);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 66, 37, 0.08);
+}
+
+/* Dark mode styling for tech-list to match footer */
+.dark-mode .tech-list li {
+    background: rgba(20, 181, 106, 0.08);
+    border: 1px solid rgba(20, 181, 106, 0.12);
+}
+
+.dark-mode .tech-list li:hover {
+    background: rgba(20, 181, 106, 0.15);
+}
+
+/* Centreren van tekst in alle secties in tech tab */
+.tech-info-container {
+    text-align: center;
+}
+
+.tech-info-container h4 {
+    margin: 2rem 0 1rem;
+}
+
+.tech-info-container p {
+    text-align: center !important;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* API endpoint cards styling met gecentreerde inhoud */
+.endpoint-card {
+    text-align: center;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.endpoint-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 66, 37, 0.1);
+}
+
+.endpoint-card code {
+    display: block;
+    background: rgba(0, 66, 37, 0.05);
+    padding: 0.8rem;
+    border-radius: 6px;
+    margin: 1rem auto;
+    max-width: 90%;
+    overflow-x: auto;
+}
+
+.architecture-section p {
+    text-align: center !important;
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
