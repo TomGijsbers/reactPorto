@@ -9,17 +9,26 @@ const CVDownload = ({ darkMode }) => {
       <p className="cv-description">
         Download mijn CV voor een volledig overzicht van mijn vaardigheden, ervaring en opleiding, of neem direct contact op.
       </p>
-      
+
       <div className="cv-buttons">
-        <a 
-          href={cvPDF} 
+        <a
+          href={cvPDF}
           className="cv-button"
           download="TomGijsbers_CV.pdf"
+          onClick={() => {
+            if (window.gtag) {
+              window.gtag('event', 'download_cv', {
+                event_category: 'CV',
+                event_label: 'CV Download Button',
+                value: 1
+              });
+            }
+          }}
         >
           CV Downloaden
         </a>
-        
-        <a 
+
+        <a
           href="mailto:tom.gijsbers@outlook.com"
           className="cv-button"
         >
