@@ -1,120 +1,231 @@
 {
-    "quotes": [
-      {
-        "person": "Pablo Picasso",
-        "sentence": "Everything you can _____ is real.",
-        "options": ["think off", "imagine", "Believe"],
-        "correct": "imagine"
-      },
-      {
-        "person": "Oscar Wilde",
-        "sentence": "Be ______; everyone else is already taken.",
-        "options": ["Yourself", "Nobody", "Everything"],
-        "correct": "Yourself"
-      },
-      {
-        "person": "Marcus Tullius Cicero",
-        "sentence": "A room without _____ is like a body without a soul.",
-        "options": ["Women", "Books", "Whiskey"],
-        "correct": "Books"
-      },
-      {
-        "person": "Rumi",
-        "sentence": "Yesterday I was clever, so I wanted to change the world. Today I am wise, so I am changing ______.",
-        "options": ["Myself", "My mind", "My clothes"],
-        "correct": "Myself"
-      },
-      {
-        "person": "Virgil",
-        "sentence": "Death twitches my ear. 'Live,' he says, 'I am ______.'",
-        "options": ["I arrived", "I am close", "I am coming"],
-        "correct": "I am coming"
-      },
-      {
-        "person": "Meister Eckhart",
-        "sentence": "If the only prayer you ever say in your entire life is _____, it will be enough.",
-        "options": ["Thank you", "Praise God", "Holy Maria"],
-        "correct": "Thank you"
-      },
-      {
-        "person": "Cato the Elder",
-        "sentence": "Bitter are the roots of ___, but how sweet their fruit.",
-        "options": ["Hard work", "Study", "Persistence"],
-        "correct": "Study"
-      },
-      {
-        "person": "Alexandre Dumas",
-        "sentence": "There are those who have knowledge and those who have understanding. The first requires memory and the second ______.",
-        "options": ["Philosophy", "Compassion", "Wisdom"],
-        "correct": "Philosophy"
-      },
-      {
-        "person": "Buddha",
-        "sentence": "Do not dwell in the past, do not dream of the future, concentrate the mind on the ______.",
-        "options": ["Present", "Path", "Truth"],
-        "correct": "Present"
-      },
-      {
-        "person": "Lao Tzu",
-        "sentence": "A journey of a thousand miles begins with a ______.",
-        "options": ["Leap", "Step", "Thought"],
-        "correct": "Step"
-      },
-      {
-        "person": "Buddha",
-        "sentence": "The mind is everything. What you think you ______.",
-        "options": ["Believe", "Become", "Create"],
-        "correct": "Become"
-      },
-      {
-        "person": "Socrates",
-        "sentence": "The only true wisdom is in knowing you know ______.",
-        "options": ["Nothing", "Everything", "Enough"],
-        "correct": "Nothing"
-      },
-      {
-        "person": "Socrates",
-        "sentence": "An unexamined life is not ______.",
-        "options": ["Important", "Worth living", "Meaningful"],
-        "correct": "Worth living"
-      },
-
-      {
-        "person": "Lao Tzu",
-        "sentence": "When I let go of what I am, I become what I ______.",
-        "options": ["Seek", "Was", "Dream"],
-        "correct": "Seek"
-      },
-      {
-        "person": "Confucius",
-        "sentence": "The man who asks a question is a fool for a minute, the man who does not ask is a fool for a ______.",
-        "options": ["Day", "Week", "Lifetime"],
-        "correct": "Lifetime"
-      },
-      {
-        "person": "Friedrich Nietzsche",
-        "sentence": "That which does not kill us makes us ______.",
-        "options": ["Weaker", "Stronger", "Resilient"],
-        "correct": "Stronger"
-      },
-      {
-        "person": "Confucius",
-        "sentence": "It does not matter how slowly you go as long as you do not ______.",
-        "options": ["Stop", "Fall", "Turn back"],
-        "correct": "Stop"
-      },
-      {
-        "person": "Friedrich Nietzsche",
-        "sentence": "That which does not kill us makes us ______.",
-        "options": ["Weaker", "Stronger", "Resilient"],
-        "correct": "Stronger"
-      },
-      {
-        "person": "Plato",
-        "sentence": "Wise men speak because they have something to say; fools because they have to say ______.",
-        "options": ["Nothing", "Something", "Anything"],
-        "correct": "Something"
-      }
-    ]
-  }
-  
+  "quotes": [
+    {
+      "person": "Pablo Picasso",
+      "sentence": "Everything you can _____ is real.",
+      "options": [
+        "think off",
+        "imagine",
+        "Believe"
+      ],
+      "correct": "imagine"
+    },
+    {
+      "person": "Oscar Wilde",
+      "sentence": "Be ______; everyone else is already taken.",
+      "options": [
+        "Yourself",
+        "Nobody",
+        "Everything"
+      ],
+      "correct": "Yourself"
+    },
+    {
+      "person": "Marcus Tullius Cicero",
+      "sentence": "A room without _____ is like a body without a soul.",
+      "options": [
+        "Women",
+        "Books",
+        "Whiskey"
+      ],
+      "correct": "Books"
+    },
+    {
+      "person": "Rumi",
+      "sentence": "Yesterday I was clever, so I wanted to change the world. Today I am wise, so I am changing ______.",
+      "options": [
+        "Myself",
+        "My mind",
+        "My clothes"
+      ],
+      "correct": "Myself"
+    },
+    {
+      "person": "Virgil",
+      "sentence": "Death twitches my ear. 'Live,' he says, 'I am ______.'",
+      "options": [
+        "I arrived",
+        "I am close",
+        "I am coming"
+      ],
+      "correct": "I am coming"
+    },
+    {
+      "person": "Meister Eckhart",
+      "sentence": "If the only prayer you ever say in your entire life is _____, it will be enough.",
+      "options": [
+        "Thank you",
+        "Praise God",
+        "Holy Maria"
+      ],
+      "correct": "Thank you"
+    },
+    {
+      "person": "Cato the Elder",
+      "sentence": "Bitter are the roots of ___, but how sweet their fruit.",
+      "options": [
+        "Hard work",
+        "Study",
+        "Persistence"
+      ],
+      "correct": "Study"
+    },
+    {
+      "person": "Alexandre Dumas",
+      "sentence": "There are those who have knowledge and those who have understanding. The first requires memory and the second ______.",
+      "options": [
+        "Philosophy",
+        "Compassion",
+        "Wisdom"
+      ],
+      "correct": "Philosophy"
+    },
+    {
+      "person": "Buddha",
+      "sentence": "Do not dwell in the past, do not dream of the future, concentrate the mind on the ______.",
+      "options": [
+        "Present",
+        "Path",
+        "Truth"
+      ],
+      "correct": "Present"
+    },
+    {
+      "person": "Lao Tzu",
+      "sentence": "A journey of a thousand miles begins with a ______.",
+      "options": [
+        "Leap",
+        "Step",
+        "Thought"
+      ],
+      "correct": "Step"
+    },
+    {
+      "person": "Buddha",
+      "sentence": "The mind is everything. What you think you ______.",
+      "options": [
+        "Believe",
+        "Become",
+        "Create"
+      ],
+      "correct": "Become"
+    },
+    {
+      "person": "Socrates",
+      "sentence": "The only true wisdom is in knowing you know ______.",
+      "options": [
+        "Nothing",
+        "Everything",
+        "Enough"
+      ],
+      "correct": "Nothing"
+    },
+    {
+      "person": "Socrates",
+      "sentence": "An unexamined life is not ______.",
+      "options": [
+        "Important",
+        "Worth living",
+        "Meaningful"
+      ],
+      "correct": "Worth living"
+    },
+    {
+      "person": "Lao Tzu",
+      "sentence": "When I let go of what I am, I become what I ______.",
+      "options": [
+        "Seek",
+        "Was",
+        "Dream"
+      ],
+      "correct": "Seek"
+    },
+    {
+      "person": "Confucius",
+      "sentence": "The man who asks a question is a fool for a minute, the man who does not ask is a fool for a ______.",
+      "options": [
+        "Day",
+        "Week",
+        "Lifetime"
+      ],
+      "correct": "Lifetime"
+    },
+    {
+      "person": "Confucius",
+      "sentence": "It does not matter how slowly you go as long as you do not ______.",
+      "options": [
+        "Stop",
+        "Fall",
+        "Turn back"
+      ],
+      "correct": "Stop"
+    },
+    {
+      "person": "Plato",
+      "sentence": "Wise men speak because they have something to say; fools because they have to say ______.",
+      "options": [
+        "Nothing",
+        "Something",
+        "Anything"
+      ],
+      "correct": "Something"
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "FloraFocus (Flutter)",
+      "summary": "Mobiele app voor plantenscan & tracking. Ontwikkeld met Flutter, geïntegreerde Unity AR-module en RESTful API in Java. Agile teamproject met Jira."
+    },
+    {
+      "id": 2,
+      "title": "Wezeldrivers (Laravel)",
+      "summary": "Webapplicatie voor fietsclubbeheer: evenementenplanning, ledenregistratie, communicatie en bestelmodule. Rol: Document Lead (UML, user stories, klantcontact). Agile werkwijze met Jira."
+    },
+    {
+      "id": 3,
+      "title": "Procesanalyse - Wilvo Group",
+      "summary": "Productieproces volledig geanalyseerd en verbeterd met BPMN-modellering. Geïmplementeerde optimalisaties hebben bottlenecks gereduceerd en efficiëntie verhoogd."
+    },
+    {
+      "id": 4,
+      "title": "React Portfolio",
+      "summary": "Persoonlijke, responsive portfolio-website gebouwd met React, Bootstrap en geïntegreerde REST API voor dynamische content-presentatie van projecten en vaardigheden."
+    },
+    {
+      "id": 5,
+      "title": "Verkeersdata Dashboard (Qlik)",
+      "summary": "Interactief dashboard met verkeersstatistieken, KPI's en geavanceerde datavisualisaties. Individueel uitgevoerd met aandacht voor UX/UI-design."
+    },
+    {
+      "id": 6,
+      "title": "Web API Project (FastAPI)",
+      "summary": "RESTful API ontwikkeld in FastAPI, gekoppeld aan Azure-database en responsive frontend in JavaScript en Bootstrap. Teamproject met focus op performance en schaalbaarheid."
+    },
+    {
+      "id": 7,
+      "title": "IoT Milieu Monitoring (Python)",
+      "summary": "IoT-systeem met sensoren voor temperatuur, luchtdruk en licht. Gegevensoverdracht via MQTT naar ThingSpeak en lokale Mosquitto-broker, met automatische LED-regeling via PWM-feedbacklus."
+    },
+    {
+      "id": 8,
+      "title": "Sensorbesturing met PWM & Ultrasone Meting",
+      "summary": "Interactief Raspberry Pi-project met PWM-gestuurde LED via SPI-ADC en potentiometer, inclusief RGB LED-reacties op afstandmetingen via ultrasone sensor. Teamwerk met real-time signaalverwerking."
+    },
+    {
+      "id": 9,
+      "title": "Machine Learning (scikit-learn)",
+      "summary": "Random Forest Classifier gebouwd en geëvalueerd met scikit-learn. Focus op preprocessing, feature engineering, modeloptimalisatie en performance-analyse via confusion matrix."
+    },
+    {
+      "id": 10,
+      "title": "Deep Learning (TensorFlow)",
+      "summary": "Neuraal netwerk ontwikkeld met TensorFlow en Keras, inclusief data-analyse, trainingsstrategie, evaluatie en gedetailleerde prestatierapportage via confusion matrix en klasserapport."
+    },
+    {
+      "id": 11,
+      "title": "EventPlanner (Angular + .NET)",
+      "summary": "Volledig uitgeruste webapplicatie voor eventbeheer, ontwikkeld in Angular met een .NET Core-backend. JWT-authenticatie via Auth0 zorgt voor veilige toegang met rolgebaseerde navigatie. De app ondersteunt eventregistratie, feedback, en admin-CRUD-functionaliteit. Moderne Angular-features zoals standalone components, signals en services zijn toegepast. De backend is beveiligd en biedt endpoints voor gebruikers- en eventbeheer via een RESTful architectuur."
+    }
+  ]  
+}
