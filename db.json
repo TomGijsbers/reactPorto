@@ -166,7 +166,13 @@
     "id": 10,
     "title": "Deep Learning (TensorFlow)",
     "summary": "Neuraal netwerk ontwikkeld met TensorFlow en Keras, inclusief data-analyse, trainingsstrategie, evaluatie en gedetailleerde prestatierapportage via confusion matrix en klasserapport."
-  }
+  },
+        {
+  "id": 11,
+  "title": "EventPlanner (Angular + .NET)",
+  "summary": "Volledig uitgeruste webapplicatie voor eventbeheer, ontwikkeld in Angular met een .NET Core-backend. JWT-authenticatie via Auth0 zorgt voor veilige toegang met rolgebaseerde navigatie. De app ondersteunt eventregistratie, feedback, en admin-CRUD-functionaliteit. Moderne Angular-features zoals standalone components, signals en services zijn toegepast. De backend is beveiligd en biedt endpoints voor gebruikers- en eventbeheer via een RESTful architectuur."
+}
+
 ]
 
   }
