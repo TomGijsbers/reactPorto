@@ -60,7 +60,7 @@ const Home = () => {
           </p>
           
           <ul className="feature-list">
-            <li>Full-stack ontwikkeling met React, Node.js en moderne frameworks</li>
+            <li>Full-stack ontwikkeling met React, Angular en moderne frameworks</li>
             <li>Database-ervaring met MongoDB en SQL</li>
             <li>Mobile development met Flutter</li>
             <li>Ervaring met data visualisatie en analyse</li>
