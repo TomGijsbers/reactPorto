@@ -1,15 +1,23 @@
-/* Premium Luxury Styling for About Page */
+/* Modern Vibrant Green Glassmorphism About Page */
 
 .tabs-container {
-    max-width: 900px;
+    max-width: 1000px;
     margin: 3rem auto;
     padding: 3rem;
-    background: linear-gradient(145deg, rgba(255, 255, 255, 0.95), rgba(250, 250, 252, 0.9));
+    /* Glass effect - Matching Bento Card */
+    background: rgba(255, 255, 255, 0.65);
     backdrop-filter: blur(20px);
-    border-radius: 24px;
-    box-shadow: 0 20px 50px rgba(17, 24, 39, 0.12), 0 10px 20px rgba(0, 0, 0, 0.05);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 32px;
+    box-shadow: 0 20px 40px -5px rgba(0, 0, 0, 0.05);
     border: 1px solid rgba(255, 255, 255, 0.8);
     transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.tabs-container:hover {
+    background: rgba(255, 255, 255, 0.85);
+    box-shadow: 0 30px 60px -10px rgba(22, 163, 74, 0.15);
+    border-color: #fff;
 }
 
 /* Premium Tab Navigation */
@@ -18,6 +26,7 @@
     border-bottom: none;
     margin-bottom: 2.5rem;
     position: relative;
+    gap: 10px;
 }
 
 .nav-tabs::after {
@@ -27,45 +36,36 @@
     left: 5%;
     width: 90%;
     height: 1px;
-    background: linear-gradient(90deg, transparent, rgba(203, 213, 224, 0.8), transparent);
+    background: linear-gradient(90deg, transparent, rgba(22, 163, 74, 0.2), transparent);
 }
 
 .nav-tabs .nav-link {
     font-weight: 600;
-    color: #4a5568;
-    padding: 1rem 1.5rem;
-    margin: 0 0.5rem;
+    color: #4b5563;
+    padding: 12px 24px;
     border: none;
     position: relative;
     transition: all 0.3s ease;
     letter-spacing: 0.5px;
     font-size: 1.1rem;
-    border-radius: 12px 12px 0 0;
+    border-radius: 50px; /* Pill shape tabs */
+    background: transparent;
 }
 
 .nav-tabs .nav-link:hover {
-    color: #004225; /* British Racing Green */
-    background-color: rgba(0, 66, 37, 0.05);
+    color: #15803d;
+    background-color: rgba(22, 163, 74, 0.1);
 }
 
 .nav-tabs .nav-link.active {
-    color: #004225; /* British Racing Green */
+    color: #fff;
     font-weight: 700;
-    background: transparent;
-    border-bottom: none;
+    background: linear-gradient(135deg, #16a34a, #15803d);
+    box-shadow: 0 4px 12px rgba(22, 163, 74, 0.3);
 }
 
 .nav-tabs .nav-link.active::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60%;
-    height: 3px;
-    background: linear-gradient(90deg, #004225, #007143); /* British Racing Green gradient */
-    border-radius: 2px;
-    z-index: 2;
+    display: none; /* Remove underline for pill style */
 }
 
 /* Tab Content Styling */
@@ -74,24 +74,27 @@
 }
 
 .tab-pane h3 {
-    font-size: 2.2rem;
-    color: #1a2138;
-    margin-bottom: 1.8rem;
-    font-weight: 700;
-    letter-spacing: -0.5px;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 2rem;
+    /* Gradient text */
+    background: linear-gradient(135deg, #166534 0%, #15803d 50%, #22c55e 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     position: relative;
     display: inline-block;
+    letter-spacing: -1px;
 }
 
 .tab-pane h3::after {
     content: '';
     position: absolute;
     bottom: -10px;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
     width: 60px;
-    height: 3px;
-    background: linear-gradient(90deg, #004225, #007143); /* British Racing Green gradient */
+    height: 4px;
+    background: linear-gradient(90deg, #16a34a, #22c55e);
     border-radius: 2px;
 }
 
@@ -101,183 +104,17 @@
     font-size: 1.1rem;
     margin-bottom: 1.8rem;
     text-align: left;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .tab-pane strong {
-    color: #2d3748;
-    font-weight: 600;
-}
-
-/* Contact Form Styling */
-.form-container {
-    padding: 2rem;
-    background: rgba(255, 255, 255, 0.7);
-    border-radius: 16px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
-    border: 1px solid rgba(226, 232, 240, 0.8);
-}
-
-.form-container h3 {
-    margin-bottom: 2rem;
-}
-
-.form-label {
-    font-weight: 600;
-    color: #2d3748;
-    margin-bottom: 0.5rem;
-    font-size: 1rem;
-}
-
-.form-control {
-    border-radius: 12px;
-    border: 1px solid #e2e8f0;
-    padding: 0.8rem 1.2rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
-    transition: all 0.3s ease;
-    background: rgba(255, 255, 255, 0.9);
-}
-
-.form-control:focus {
-    border-color: #004225; /* British Racing Green */
-    box-shadow: 0 0 0 3px rgba(0, 66, 37, 0.2);
-}
-
-.form-control::placeholder {
-    color: #a0aec0;
-}
-
-.btn-primary {
-    background: linear-gradient(135deg, #004225, #007143); /* British Racing Green gradient */
-    border: none;
-    padding: 1rem 1.8rem;
-    border-radius: 12px;
-    font-size: 1.1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 10px 20px rgba(0, 66, 37, 0.2);
-    letter-spacing: 0.5px;
-    margin-top: 1rem;
-    width: auto;
-    display: inline-block;
-}
-
-.btn-primary:hover:not(:disabled) {
-    background: linear-gradient(135deg, #003018, #005c37); /* Darker British Racing Green gradient */
-    transform: translateY(-3px);
-    box-shadow: 0 15px 25px rgba(0, 66, 37, 0.25);
-}
-
-.btn-primary:active:not(:disabled) {
-    transform: translateY(-1px);
-    box-shadow: 0 5px 15px rgba(0, 66, 37, 0.25);
-}
-
-.btn-primary:disabled {
-    background: linear-gradient(135deg, #94a3b8, #cbd5e0);
-    cursor: not-allowed;
-    box-shadow: none;
-    opacity: 0.7;
-}
-
-/* Dark Mode Styling */
-.dark-mode .tabs-container {
-    background: linear-gradient(145deg, rgba(30, 41, 59, 0.95), rgba(15, 23, 42, 0.9));
-    border: 1px solid rgba(51, 65, 85, 0.5);
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3), 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.dark-mode .nav-tabs {
-    border-bottom-color: rgba(51, 65, 85, 0.5);
-}
-
-.dark-mode .nav-tabs::after {
-    background: linear-gradient(90deg, transparent, rgba(51, 65, 85, 0.8), transparent);
-}
-
-.dark-mode .nav-tabs .nav-link {
-    color: #94a3b8;
-}
-
-.dark-mode .nav-tabs .nav-link:hover {
-    color: #14b56a; /* Light British Racing Green */
-    background-color: rgba(20, 181, 106, 0.1);
-}
-
-.dark-mode .nav-tabs .nav-link.active {
-    color: #14b56a; /* Light British Racing Green */
-    background: transparent;
-}
-
-.dark-mode .nav-tabs .nav-link.active::after {
-    background: linear-gradient(90deg, #14b56a, #35d78f); /* Light British Racing Green gradient */
-}
-
-.dark-mode .tab-pane h3 {
-    color: #f1f5f9;
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-}
-
-.dark-mode .tab-pane h3::after {
-    background: linear-gradient(90deg, #14b56a, #35d78f); /* Light British Racing Green gradient */
-}
-
-.dark-mode .tab-pane p {
-    color: #cbd5e1;
-}
-
-.dark-mode .tab-pane strong {
-    color: #f1f5f9;
-}
-
-.dark-mode .form-container {
-    background: rgba(30, 41, 59, 0.7);
-    border: 1px solid rgba(51, 65, 85, 0.5);
-}
-
-.dark-mode .form-label {
-    color: #cbd5e1;
-}
-
-.dark-mode .form-control {
-    background: rgba(30, 41, 59, 0.8);
-    border: 1px solid rgba(51, 65, 85, 0.8);
-    color: #e2e8f0;
-}
-
-.dark-mode .form-control:focus {
-    border-color: #14b56a; /* Light British Racing Green */
-    box-shadow: 0 0 0 3px rgba(20, 181, 106, 0.2);
-}
-
-.dark-mode .form-control::placeholder {
-    color: #64748b;
-}
-
-.dark-mode .btn-primary {
-    background: linear-gradient(135deg, #14b56a, #35d78f); /* Light British Racing Green gradient */
-}
-
-.dark-mode .btn-primary:hover:not(:disabled) {
-    background: linear-gradient(135deg, #0f9358, #2ac17e);
-}
-
-/* Additional luxury touches */
-.tab-pane > p:first-of-type {
-    position: relative;
-}
-
-.tab-pane > p:first-of-type::first-letter {
-    font-size: 2.5rem;
+    color: #166534;
     font-weight: 700;
-    color: #004225; /* British Racing Green */
-    padding-right: 0.2rem;
-    float: left;
-    line-height: 1;
-    margin-right: 0.2rem;
 }
 
-/* Styling voor tech-list zonder bullets with improved alignment */
+/* Tech List Styling - Matching Bento Skills */
 .tech-list {
     list-style-type: none;
     padding-left: 0;
@@ -286,33 +123,157 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1rem;
+    gap: 12px;
 }
   
 .tech-list li {
-    margin-bottom: 0.8rem;
-    padding: 0.8rem 1.2rem;
-    background: rgba(0, 66, 37, 0.05);
-    border-radius: 12px;
+    margin-bottom: 0;
+    padding: 8px 16px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50px;
+    font-weight: 600;
+    color: #15803d;
+    border: 1px solid rgba(22, 163, 74, 0.2);
     transition: all 0.3s ease;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
-    border: 1px solid rgba(0, 66, 37, 0.08);
+    box-shadow: none;
 }
   
 .tech-list li:hover {
-    background: rgba(0, 66, 37, 0.1);
-    transform: translateY(-3px);
-    box-shadow: 0 6px 12px rgba(0, 66, 37, 0.08);
+    background: #dcfce7;
+    border-color: #86efac;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(22, 163, 74, 0.1);
 }
 
-/* Dark mode styling for tech-list to match footer */
+/* API endpoint cards styling */
+.endpoint-card {
+    text-align: center;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 24px;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.endpoint-card:hover {
+    transform: translateY(-3px);
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 10px 30px -5px rgba(22, 163, 74, 0.1);
+    border-color: #fff;
+}
+
+.endpoint-card h5 {
+    color: #166534;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.endpoint-card code {
+    display: block;
+    background: rgba(22, 163, 74, 0.05);
+    padding: 1rem;
+    border-radius: 12px;
+    margin: 1rem auto;
+    max-width: 90%;
+    overflow-x: auto;
+    color: #15803d;
+    font-family: 'Fira Code', monospace;
+    border: 1px solid rgba(22, 163, 74, 0.1);
+}
+
+/* Dark Mode Styling */
+.dark-mode .tabs-container {
+    background: rgba(15, 23, 42, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.dark-mode .tabs-container:hover {
+    background: rgba(30, 41, 59, 0.8);
+    border-color: rgba(34, 197, 94, 0.3);
+}
+
+.dark-mode .nav-tabs::after {
+    background: linear-gradient(90deg, transparent, rgba(34, 197, 94, 0.2), transparent);
+}
+
+.dark-mode .nav-tabs .nav-link {
+    color: #cbd5e1;
+}
+
+.dark-mode .nav-tabs .nav-link:hover {
+    color: #4ade80;
+    background-color: rgba(34, 197, 94, 0.1);
+}
+
+.dark-mode .nav-tabs .nav-link.active {
+    color: #020617;
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+    box-shadow: 0 4px 12px rgba(34, 197, 94, 0.3);
+}
+
+.dark-mode .tab-pane h3 {
+    background: linear-gradient(135deg, #4ade80 0%, #22c55e 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.dark-mode .tab-pane h3::after {
+    background: linear-gradient(90deg, #22c55e, #4ade80);
+}
+
+.dark-mode .tab-pane p {
+    color: #cbd5e1;
+}
+
+.dark-mode .tab-pane strong {
+    color: #4ade80;
+}
+
 .dark-mode .tech-list li {
-    background: rgba(20, 181, 106, 0.08);
-    border: 1px solid rgba(20, 181, 106, 0.12);
+    background: rgba(30, 41, 59, 0.5);
+    color: #4ade80;
+    border-color: rgba(34, 197, 94, 0.3);
 }
 
 .dark-mode .tech-list li:hover {
-    background: rgba(20, 181, 106, 0.15);
+    background: rgba(22, 163, 74, 0.2);
+}
+
+.dark-mode .endpoint-card {
+    background: rgba(30, 41, 59, 0.4);
+    border-color: rgba(255, 255, 255, 0.05);
+}
+
+.dark-mode .endpoint-card:hover {
+    background: rgba(30, 41, 59, 0.6);
+    border-color: rgba(34, 197, 94, 0.3);
+}
+
+.dark-mode .endpoint-card h5 {
+    color: #4ade80;
+}
+
+.dark-mode .endpoint-card code {
+    background: rgba(15, 23, 42, 0.6);
+    color: #4ade80;
+    border-color: rgba(34, 197, 94, 0.2);
+}
+
+/* Additional luxury touches */
+.tab-pane > p:first-of-type::first-letter {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #16a34a;
+    padding-right: 0.5rem;
+    float: left;
+    line-height: 0.8;
+    margin-right: 0.2rem;
+}
+
+.dark-mode .tab-pane > p:first-of-type::first-letter {
+    color: #4ade80;
 }
 
 /* Centreren van tekst in alle secties in tech tab */
@@ -321,41 +282,15 @@
 }
 
 .tech-info-container h4 {
-    margin: 2rem 0 1rem;
+    margin: 2rem 0 1.5rem;
+    color: #166534;
+    font-weight: 700;
+}
+
+.dark-mode .tech-info-container h4 {
+    color: #4ade80;
 }
 
 .tech-info-container p {
     text-align: center !important;
-    max-width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* API endpoint cards styling met gecentreerde inhoud */
-.endpoint-card {
-    text-align: center;
-    transition: all 0.3s ease;
-    background: rgba(255, 255, 255, 0.6);
-}
-
-.endpoint-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(0, 66, 37, 0.1);
-}
-
-.endpoint-card code {
-    display: block;
-    background: rgba(0, 66, 37, 0.05);
-    padding: 0.8rem;
-    border-radius: 6px;
-    margin: 1rem auto;
-    max-width: 90%;
-    overflow-x: auto;
-}
-
-.architecture-section p {
-    text-align: center !important;
-    max-width: 80%;
-    margin-left: auto;
-    margin-right: auto;
 }
