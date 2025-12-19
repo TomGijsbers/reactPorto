@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { getProjects } from "../apis/ProjectApi";
 import ProjectCard from "./ProjectCard";
 import "../views/css/ProjectCard.css";
+import "../views/css/SchoolProjects.css"; // Added import for specific section styles
 
 const SchoolProjects = () => {
   const [projects, setProjects] = useState([]);
