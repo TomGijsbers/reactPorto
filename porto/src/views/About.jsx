@@ -23,8 +23,6 @@ const About = () => {
                     <Tabs />
                 </div>
             </div>
-            
-            <Footer />
         </div>
     );
 };
