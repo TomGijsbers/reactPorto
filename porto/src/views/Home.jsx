@@ -33,39 +33,56 @@ const Home = () => {
     <div className={darkMode ? "dark-mode" : ""}>
       <NavBar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       
-      {/* Hero Section with enhanced styling */}
-      <section className="hero-section">
-        <div className="hero-content">
-          <h1 className="hero-title">Tom Gijsbers</h1>
-          <p className="hero-subtitle">
-            Full-stack developer met een passie voor data en technologie. 
-            Mijn reis van metaalindustrie naar IT illustreert mijn aanpassingsvermogen en 
-            toewijding aan voortdurend leren en ontwikkelen.
-          </p>
-          <div className="hero-actions">
-            <a href="#projects" className="hero-cta">Bekijk Projecten</a>
-            <a href="#contact" className="hero-cta">Neem Contact Op</a>
-          </div>
-        </div>
-      </section>
-      
       <div className="home-container">
-        {/* Introduction */}
-        <div className="construction-card">
-          <h1>Welkom op mijn Portfolio</h1>
-          <p>
-            Ik ben een Full-stack developer met een achtergrond in de metaalindustrie. 
-            Momenteel volg ik een bacheloropleiding Toegepaste Informatica om mijn vaardigheden 
-            verder te ontwikkelen en mijn passie voor technologie na te streven.
-          </p>
-          
-          <ul className="feature-list">
-            <li>Full-stack ontwikkeling met React, Angular en moderne frameworks</li>
-            <li>Database-ervaring met MongoDB en SQL</li>
-            <li>Mobile development met Flutter</li>
-            <li>Ervaring met data visualisatie en analyse</li>
-            <li>Sterke probleemoplossingsvaardigheden uit mijn technische achtergrond</li>
-          </ul>
+        {/* Modern Bento Grid Layout */}
+        <div className="bento-grid">
+          {/* 1. Main Hero Tile */}
+          <div className="bento-card hero-card">
+            <div className="status-badge">
+              <span className="status-dot"></span>
+              Beschikbaar voor projecten
+            </div>
+            <h1 className="bento-title">Tom Gijsbers</h1>
+            <h2 className="bento-subtitle">Full-stack Developer &<br/>Data Enthusiast</h2>
+            <p className="bento-text">
+              Gedreven door technologie, data en innovatie. Ik bouw moderne webapplicaties met oog voor detail en performance.
+            </p>
+          </div>
+
+          {/* 2. Action Tile */}
+          <div className="bento-card action-card">
+            <h3>Laten we bouwen</h3>
+            <p>Klaar om uw ideeën tot leven te brengen?</p>
+            <div className="bento-actions">
+              <a href="#projects" className="bento-btn primary">Bekijk Werk</a>
+              <a href="#contact" className="bento-btn secondary">Contact</a>
+            </div>
+          </div>
+
+          {/* 3. Bio Tile */}
+          <div className="bento-card bio-card">
+            <h3>Mijn Verhaal</h3>
+            <p>
+              Van de precisie van de metaalindustrie naar de logica van IT. 
+              Mijn achtergrond illustreert mijn aanpassingsvermogen en toewijding 
+              aan voortdurend leren. Momenteel bachelor student Toegepaste Informatica.
+            </p>
+          </div>
+
+          {/* 4. Skills Tile */}
+          <div className="bento-card skills-card">
+            <h3>Expertise</h3>
+            <ul className="bento-skills-list">
+              <li>React & Angular</li>
+              <li>MongoDB & SQL</li>
+              <li>Flutter Mobile</li>
+              <li>Data Analysis</li>
+              <li>TIG & MIG Welding (Steel/SS/Alu)</li>
+              <li>Robot Welding (Cloos Group & Valk Welding)</li>
+              <li>Problem Solving</li>
+              <li>Modern UI/UX</li>
+            </ul>
+          </div>
         </div>
         
         {/* School Projects Section */}
@@ -75,7 +92,7 @@ const Home = () => {
         
         {/* CV Download Section */}
         <div id="contact">
-          <CVDownload  />
+          <CVDownload darkMode={darkMode} />
         </div>
       </div>
     </div>
