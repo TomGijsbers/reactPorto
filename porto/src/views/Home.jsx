@@ -5,6 +5,7 @@ import SchoolProjects from "../component/SchoolProjects";
 import CVDownload from "../component/CVDownload";
 import Footer from "../component/Footer";
 import "./css/Home.css";
+import "../tailwind.css"; // Import Tailwind CSS
 
 const Home = () => {
   // State for dark mode
@@ -34,7 +35,6 @@ const Home = () => {
       
       {/* Hero Section with enhanced styling */}
       <section className="hero-section">
-        <div className="hero-bg"></div>
         <div className="hero-content">
           <h1 className="hero-title">Tom Gijsbers</h1>
           <p className="hero-subtitle">
