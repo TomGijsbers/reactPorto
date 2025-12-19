@@ -1,27 +1,44 @@
-/* CV Download Section styling */
+/* Modern Vibrant Green Glassmorphism CV Section */
 .cv-section {
-  padding: 60px 20px;
+  padding: 60px 40px;
   text-align: center;
-  margin: 60px 0;
-  background: #f8fafc;
-  border-radius: 16px;
-  transition: all 0.3s ease;
-  box-shadow: 0 8px 20px rgba(17, 24, 39, 0.08), 0 4px 8px rgba(0, 0, 0, 0.03);
-  border: 1px solid rgba(226, 232, 240, 0.8);
+  margin: 60px auto;
+  max-width: 900px;
+  /* Glass effect */
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 32px;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  box-shadow: 0 20px 40px -5px rgba(0, 0, 0, 0.05);
+}
+
+.cv-section:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 30px 60px -10px rgba(22, 163, 74, 0.15);
+  border-color: #fff;
 }
 
 .cv-title {
   margin-bottom: 20px;
-  font-weight: 700;
-  font-size: 1.8rem;
-  color: #1a2138;
+  font-weight: 900;
+  font-size: 2.2rem;
+  /* Gradient text */
+  background: linear-gradient(135deg, #166534 0%, #15803d 50%, #22c55e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: -0.5px;
 }
 
 .cv-description {
   max-width: 600px;
-  margin: 0 auto 30px;
+  margin: 0 auto 40px;
   color: #4b5563;
-  line-height: 1.6;
+  line-height: 1.8;
+  font-size: 1.1rem;
+  font-weight: 500;
 }
 
 .cv-buttons {
@@ -32,66 +49,97 @@
 }
 
 .cv-button {
-  padding: 10px 20px;
-  background: linear-gradient(90deg, #004225, #007143);
+  padding: 14px 32px;
+  background: linear-gradient(135deg, #16a34a, #15803d);
   color: white;
   text-decoration: none;
-  border-radius: 8px;
-  font-weight: 600;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 1.05rem;
   transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
-  box-shadow: 0 4px 6px rgba(0, 66, 37, 0.2);
+  box-shadow: 0 10px 20px -5px rgba(22, 163, 74, 0.4);
+  border: 2px solid transparent;
 }
 
 .cv-button:hover {
-  background: linear-gradient(135deg, #003018, #005c37);
-  transform: translateY(-2px);
-  box-shadow: 0 8px 12px rgba(0, 66, 37, 0.25);
+  transform: translateY(-3px);
+  box-shadow: 0 15px 30px -5px rgba(22, 163, 74, 0.5);
+  background: linear-gradient(135deg, #15803d, #166534);
+}
+
+/* Secondary button style for Contact */
+.cv-button:last-child {
+    background: transparent;
+    color: #15803d;
+    border: 2px solid #15803d;
+    box-shadow: none;
+}
+
+.cv-button:last-child:hover {
+    background: rgba(21, 128, 61, 0.1);
+    box-shadow: none;
 }
 
 /* Dark mode styles */
 body.dark-mode .cv-section {
-    background: linear-gradient(145deg, #1e293b, #111827);
-    border: 1px solid rgba(51, 65, 85, 0.5);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.15);
-  }
-  
-  body.dark-mode .cv-title {
-    color: #f1f5f9;
-  }
-  
-  body.dark-mode .cv-description {
-    color: #cbd5e1;
-  }
-  
-  body.dark-mode .cv-button {
-    background: linear-gradient(135deg, #14b56a, #35d78f);
-    color: white;
-    box-shadow: 0 4px 6px rgba(20, 181, 106, 0.2);
-  }
-  
-  body.dark-mode .cv-button:hover {
-    background: linear-gradient(135deg, #0f9358, #2ac17e);
-    box-shadow: 0 8px 12px rgba(20, 181, 106, 0.25);
-  }
-  
+    background: rgba(30, 41, 59, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 20px 40px -5px rgba(0, 0, 0, 0.3);
+}
 
+body.dark-mode .cv-section:hover {
+    background: rgba(30, 41, 59, 0.8);
+    border-color: rgba(34, 197, 94, 0.3);
+}
+  
+body.dark-mode .cv-title {
+    background: linear-gradient(135deg, #4ade80 0%, #22c55e 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+  
+body.dark-mode .cv-description {
+    color: #cbd5e1;
+}
+  
+body.dark-mode .cv-button {
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+    color: #020617;
+    box-shadow: 0 0 20px rgba(34, 197, 94, 0.4);
+}
+
+body.dark-mode .cv-button:last-child {
+    background: transparent;
+    color: #4ade80;
+    border-color: #4ade80;
+    box-shadow: none;
+}
+
+body.dark-mode .cv-button:last-child:hover {
+    background: rgba(34, 197, 94, 0.15);
+}
+  
 /* Responsive styles */
 @media (max-width: 768px) {
   .cv-section {
-    padding: 40px 16px;
-    margin: 40px 0;
+    padding: 40px 24px;
+    margin: 40px 16px;
+    width: auto;
   }
   
   .cv-title {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
   
   .cv-buttons {
     flex-direction: column;
     align-items: center;
+    gap: 16px;
   }
   
   .cv-button {
-    width: 80%;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
   }
 }
