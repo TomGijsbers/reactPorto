@@ -226,6 +226,11 @@
       "id": 11,
       "title": "EventPlanner (Angular + .NET)",
       "summary": "Volledig uitgeruste webapplicatie voor eventbeheer, ontwikkeld in Angular met een .NET Core-backend. JWT-authenticatie via Auth0 zorgt voor veilige toegang met rolgebaseerde navigatie. De app ondersteunt eventregistratie, feedback, en admin-CRUD-functionaliteit. Moderne Angular-features zoals standalone components, signals en services zijn toegepast. De backend is beveiligd en biedt endpoints voor gebruikers- en eventbeheer via een RESTful architectuur."
+    },
+     {
+      "id": 12,
+      "title": "Migratie Ninox naar Power Platform (Windows 365)",
+       "summary": "Als Team Lead verantwoordelijk voor de migratie van een Ninox-database naar een Windows 365-omgeving. Ontwikkeling en architectuur van een maatwerk Power App met SharePoint-lijsten als backend, inclusief datamodellering, procesoptimalisatie en aansturing van het development team."
     }
   ]
 }
