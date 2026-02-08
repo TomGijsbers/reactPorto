@@ -7,7 +7,7 @@ import "../views/css/About.css"; // Importeer CSS
 function JustifiedExample() {
   return (
     <div className="tabs-container">
-      <Tabs defaultActiveKey="werk" id="justify-tab-example" className="mb-3 nav-tabs" justify>
+      <Tabs defaultActiveKey="werk" id="justify-tab-example" className="mb-3 nav-tabs centered-tabs">
         
         {/* Werk Tab */}
         <Tab eventKey="werk" title="Werk">

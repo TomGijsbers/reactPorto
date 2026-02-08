@@ -40,10 +40,10 @@ const Home = () => {
           <div className="bento-card hero-card">
             <div className="status-badge">
               <span className="status-dot"></span>
-              Beschikbaar voor projecten
+              Student Toegepaste Informatica
             </div>
             <h1 className="bento-title">Tom Gijsbers</h1>
-            <h2 className="bento-subtitle">Full-stack Developer &<br/>Data Enthusiast</h2>
+            <h2 className="bento-subtitle">Full-Stack Developer in Opleiding &<br/>Data Enthusiast</h2>
             <p className="bento-text">
               Gedreven door technologie, data en innovatie. Ik bouw moderne webapplicaties met oog voor detail en performance.
             </p>
@@ -51,11 +51,11 @@ const Home = () => {
 
           {/* 2. Action Tile */}
           <div className="bento-card action-card">
-            <h3>Laten we bouwen</h3>
-            <p>Klaar om uw ideeën tot leven te brengen?</p>
+            <h3>Welkom</h3>
+            <p>Bekijk mijn groei en projecten tijdens mijn studie.</p>
             <div className="bento-actions">
-              <a href="#projects" className="bento-btn primary">Bekijk Werk</a>
-              <a href="#contact" className="bento-btn secondary">Contact</a>
+              <a href="#projects" className="bento-btn primary">Mijn Projecten</a>
+              <a href="#contact" className="bento-btn secondary">Meer Info</a>
             </div>
           </div>
 
