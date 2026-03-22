@@ -35,24 +35,27 @@ function JustifiedExample() {
           </p>
         </Tab>
 
-        {/* School Tab */}
-        <Tab eventKey="school" title="School">
-          <h3>Opleiding</h3>
-          <p>
-            Momenteel volg ik een <strong>bacheloropleiding Toegepaste Informatica</strong>, die speciaal ontworpen is voor mensen die een <strong>carrièreswitch</strong> willen maken. 
-            De opleiding is <strong>dynamisch en praktijkgericht</strong>, waarbij we elke zes weken twee nieuwe vakken volgen. Dit stelt me in staat om <strong>snel nieuwe skills</strong> op te doen en mezelf verder te ontwikkelen. 
-            Tijdens mijn studie ontdekte ik al snel een <strong>fascinatie voor data en de mogelijkheden die het biedt</strong>.
-          </p>
-          <p>
-            Tijdens mijn opleiding specialiseer ik me in <strong>full-stack development</strong>, waarbij ik werk met zowel frontend- als backendtechnologieën zoals <strong>React</strong> voor de frontend en <strong>Node.js</strong> voor de backend.
-          </p>
-          <p>
-            Daarnaast heb ik ervaring met <strong>Flutter, Java, Python, ASP.NET, mobile development</strong> en <strong>data visualisatie</strong>. Ik werk regelmatig met databases zoals <strong>MongoDB en SQL</strong> en gebruik <strong>Docker</strong> om mijn applicaties efficiënt te beheren.
-          </p>
-          <p>
-            In het verleden heb ik een <strong>cursus beleggingsadviseur</strong> gevolgd aan <strong>SyntraPXL</strong>. Ik ben ook geïnteresseerd in de <strong>aandelenmarkt en financiële technologie</strong>.
-          </p>
-        </Tab>
+ {/* School Tab */}
+<Tab eventKey="school" title="School">
+  <h3>Opleiding</h3>
+  <p>
+    Momenteel volg ik een <strong>bacheloropleiding Toegepaste Informatica</strong>, die speciaal ontworpen is voor mensen die een <strong>carrièreswitch</strong> willen maken. 
+    De opleiding is <strong>dynamisch en praktijkgericht</strong>, waarbij we elke zes weken twee nieuwe vakken volgen. Dit stelt me in staat om <strong>snel nieuwe skills</strong> op te doen en mezelf verder te ontwikkelen. 
+    Tijdens mijn studie ontdekte ik al snel een <strong>fascinatie voor data en de mogelijkheden die het biedt</strong>.
+  </p>
+  <p>
+    Tijdens mijn opleiding specialiseer ik me in <strong>full-stack development</strong>, waarbij ik werk met zowel frontend- als backendtechnologieën zoals <strong>React</strong> voor de frontend en <strong>Node.js</strong> voor de backend.
+  </p>
+  <p>
+    Daarnaast heb ik ervaring met <strong>Flutter, Java, Python, ASP.NET, mobile development</strong> en <strong>data visualisatie</strong>. Ik werk regelmatig met databases zoals <strong>MongoDB en SQL</strong> en gebruik <strong>Docker</strong> om mijn applicaties efficiënt te beheren.
+  </p>
+  <p>
+    <strong>Soft Skills:</strong> Mijn achtergrond in de industrie en huidige studie hebben me een sterk <strong>probleemoplossend vermogen</strong> en oog voor detail opgeleverd. Daarnaast ben ik gericht op duidelijke communicatie en werk ik effectief samen binnen <strong>Agile teams</strong>.
+  </p>
+  <p>
+    In het verleden heb ik een <strong>cursus beleggingsadviseur</strong> gevolgd aan <strong>SyntraPXL</strong>. Ik ben ook geïnteresseerd in de <strong>aandelenmarkt en financiële technologie</strong>.
+  </p>
+</Tab>
 
         {/* Contact Tab */}
         <Tab eventKey="technical" title="Tech Stack">

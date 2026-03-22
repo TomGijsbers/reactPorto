@@ -17,7 +17,6 @@ const Projects = () => {
       <div className="home-container" style={{ paddingTop: "2rem" }}>
         <SchoolProjects />
       </div>
-      <Footer />
     </div>
   );
 };

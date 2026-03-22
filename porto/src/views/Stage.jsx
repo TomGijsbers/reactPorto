@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import NavBar from "../component/Nav";
+import PVADocument from "../assets/PVA_TomGijsbers.pdf";
 import "./css/Stage.css";
 
 const Stage = () => {
@@ -78,7 +79,7 @@ const Stage = () => {
           <div className="download-section">
             <h3>Bewijsstukken</h3>
             <div className="download-grid">
-              <a href="#" className="download-btn" aria-label="Download Plan van Aanpak">
+              <a href={PVADocument} download className="download-btn" aria-label="Download Plan van Aanpak">
                 Plan van Aanpak
               </a>
               <a href="#" className="download-btn" aria-label="Download Realisatiedocument">

@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import cvPDF from "../assets/CV-TomGijsbers2.pdf"; // Import the PDF
+import cvPDF from "../assets/CV-TomGijsbers.pdf"; // Import the PDF
 import "./CVDownload.css"; // We'll create this CSS file
 
 const CVDownload = ({ darkMode }) => {
