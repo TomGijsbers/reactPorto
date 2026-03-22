@@ -172,65 +172,65 @@
     }
   ],
   "projects": [
-    {
-      "id": 1,
-      "title": "FloraFocus (Flutter)",
-      "summary": "Mobiele app voor plantenscan & tracking. Ontwikkeld met Flutter, geïntegreerde Unity AR-module en RESTful API in Java. Agile teamproject met Jira."
-    },
-    {
-      "id": 2,
-      "title": "Wezeldrivers (Laravel)",
-      "summary": "Webapplicatie voor fietsclubbeheer: evenementenplanning, ledenregistratie, communicatie en bestelmodule. Rol: Document Lead (UML, user stories, klantcontact). Agile werkwijze met Jira."
-    },
-    {
-      "id": 3,
-      "title": "Procesanalyse - Wilvo Group",
-      "summary": "Productieproces volledig geanalyseerd en verbeterd met BPMN-modellering. Geïmplementeerde optimalisaties hebben bottlenecks gereduceerd en efficiëntie verhoogd."
-    },
-    {
-      "id": 4,
-      "title": "React Portfolio",
-      "summary": "Persoonlijke, responsive portfolio-website gebouwd met React, Bootstrap en geïntegreerde REST API voor dynamische content-presentatie van projecten en vaardigheden."
-    },
-    {
-      "id": 5,
-      "title": "Verkeersdata Dashboard (Qlik)",
-      "summary": "Interactief dashboard met verkeersstatistieken, KPI's en geavanceerde datavisualisaties. Individueel uitgevoerd met aandacht voor UX/UI-design."
-    },
-    {
-      "id": 6,
-      "title": "Web API Project (FastAPI)",
-      "summary": "RESTful API ontwikkeld in FastAPI, gekoppeld aan Azure-database en responsive frontend in JavaScript en Bootstrap. Teamproject met focus op performance en schaalbaarheid."
-    },
-    {
-      "id": 7,
-      "title": "IoT Milieu Monitoring (Python)",
-      "summary": "IoT-systeem met sensoren voor temperatuur, luchtdruk en licht. Gegevensoverdracht via MQTT naar ThingSpeak en lokale Mosquitto-broker, met automatische LED-regeling via PWM-feedbacklus."
-    },
-    {
-      "id": 8,
-      "title": "Sensorbesturing met PWM & Ultrasone Meting",
-      "summary": "Interactief Raspberry Pi-project met PWM-gestuurde LED via SPI-ADC en potentiometer, inclusief RGB LED-reacties op afstandmetingen via ultrasone sensor. Teamwerk met real-time signaalverwerking."
-    },
-    {
-      "id": 9,
-      "title": "Machine Learning (scikit-learn)",
-      "summary": "Random Forest Classifier gebouwd en geëvalueerd met scikit-learn. Focus op preprocessing, feature engineering, modeloptimalisatie en performance-analyse via confusion matrix."
-    },
-    {
-      "id": 10,
-      "title": "Deep Learning (TensorFlow)",
-      "summary": "Neuraal netwerk ontwikkeld met TensorFlow en Keras, inclusief data-analyse, trainingsstrategie, evaluatie en gedetailleerde prestatierapportage via confusion matrix en klasserapport."
-    },
-    {
-      "id": 11,
-      "title": "EventPlanner (Angular + .NET)",
-      "summary": "Volledig uitgeruste webapplicatie voor eventbeheer, ontwikkeld in Angular met een .NET Core-backend. JWT-authenticatie via Auth0 zorgt voor veilige toegang met rolgebaseerde navigatie. De app ondersteunt eventregistratie, feedback, en admin-CRUD-functionaliteit. Moderne Angular-features zoals standalone components, signals en services zijn toegepast. De backend is beveiligd en biedt endpoints voor gebruikers- en eventbeheer via een RESTful architectuur."
-    },
-     {
-      "id": 12,
-      "title": "Migratie Ninox naar Power Platform (Windows 365)",
-       "summary": "Als Team Lead verantwoordelijk voor de migratie van een Ninox-database naar een Windows 365-omgeving. Ontwikkeling en architectuur van een maatwerk Power App met SharePoint-lijsten als backend, inclusief datamodellering, procesoptimalisatie en aansturing van het development team."
-    }
-  ]
+  {
+    "id": 1,
+    "title": "FloraFocus (Flutter)",
+    "summary": "Mobiele app voor plantenscan & tracking. Ontwikkeld met Flutter, geïntegreerde Unity AR-module en RESTful API in Java. Agile teamproject met Jira. Leermoment: Ik heb hier geleerd hoe ik hardware-integraties (AR/camera) en een externe Java RESTful API effectief kan combineren in een soepele mobiele interface."
+  },
+  {
+    "id": 2,
+    "title": "Wezeldrivers (Laravel)",
+    "summary": "Webapplicatie voor fietsclubbeheer: evenementenplanning, ledenregistratie, communicatie en bestelmodule. Rol: Document Lead (UML, user stories, klantcontact). Agile werkwijze met Jira. Leermoment: Mijn grootste inzicht was het stroomlijnen van klantcommunicatie en het vertalen van abstracte wensen naar concrete UML-diagrammen en user stories."
+  },
+  {
+    "id": 3,
+    "title": "Procesanalyse - Wilvo Group",
+    "summary": "Productieproces volledig geanalyseerd en verbeterd met BPMN-modellering. Geïmplementeerde optimalisaties hebben bottlenecks gereduceerd en efficiëntie verhoogd. Leermoment: Ik heb ervaren hoe cruciaal een nauwkeurige BPMN-modellering is om verborgen bottlenecks in een fysiek productieproces bloot te leggen."
+  },
+  {
+    "id": 4,
+    "title": "React Portfolio",
+    "summary": "Persoonlijke, responsive portfolio-website gebouwd met React, Bootstrap en geïntegreerde REST API voor dynamische content-presentatie van projecten en vaardigheden. Leermoment: Door dit project heb ik de kracht van component-based development en state management in React volledig in de vingers gekregen."
+  },
+  {
+    "id": 5,
+    "title": "Verkeersdata Dashboard (Qlik)",
+    "summary": "Interactief dashboard met verkeersstatistieken, KPI's en geavanceerde datavisualisaties. Individueel uitgevoerd met aandacht voor UX/UI-design. Leermoment: Hier ontdekte ik hoe belangrijk doordachte UX/UI-keuzes zijn om gigantische hoeveelheden ruwe data visueel begrijpelijk te maken voor eindgebruikers."
+  },
+  {
+    "id": 6,
+    "title": "Web API Project (FastAPI)",
+    "summary": "RESTful API ontwikkeld in FastAPI, gekoppeld aan Azure-database en responsive frontend in JavaScript en Bootstrap. Teamproject met focus op performance en schaalbaarheid. Leermoment: Ik heb geleerd hoe ik een schaalbare en performante REST API opzet in Python en deze veilig koppel aan een cloud-database (Azure)."
+  },
+  {
+    "id": 7,
+    "title": "IoT Milieu Monitoring (Python)",
+    "summary": "IoT-systeem met sensoren voor temperatuur, luchtdruk en licht. Gegevensoverdracht via MQTT naar ThingSpeak en lokale Mosquitto-broker, met automatische LED-regeling via PWM-feedbacklus. Leermoment: Dit project leerde me hoe hardware en software naadloos in real-time kunnen communiceren via MQTT protocollen in een IoT-architectuur."
+  },
+  {
+    "id": 8,
+    "title": "Sensorbesturing met PWM & Ultrasone Meting",
+    "summary": "Interactief Raspberry Pi-project met PWM-gestuurde LED via SPI-ADC en potentiometer, inclusief RGB LED-reacties op afstandmetingen via ultrasone sensor. Teamwerk met real-time signaalverwerking. Leermoment: Het werken met analoge signalen via een Raspberry Pi gaf me diepgaand inzicht in hardware-software interactie en de complexiteit van signaalverwerking."
+  },
+  {
+    "id": 9,
+    "title": "Machine Learning (scikit-learn)",
+    "summary": "Random Forest Classifier gebouwd en geëvalueerd met scikit-learn. Focus op preprocessing, feature engineering, modeloptimalisatie en performance-analyse via confusion matrix. Leermoment: Ik heb geleerd hoe cruciaal data preprocessing en feature engineering zijn; de kwaliteit van de data bepaalt de nauwkeurigheid van het model."
+  },
+  {
+    "id": 10,
+    "title": "Deep Learning (TensorFlow)",
+    "summary": "Neuraal netwerk ontwikkeld met TensorFlow en Keras, inclusief data-analyse, trainingsstrategie, evaluatie en gedetailleerde prestatierapportage via confusion matrix en klasserapport. Leermoment: Dit gaf me praktisch inzicht in het ontwerpen, trainen en finetunen van neurale netwerken om complexe patronen in ruwe data te herkennen."
+  },
+  {
+    "id": 11,
+    "title": "EventPlanner (Angular + .NET)",
+    "summary": "Volledig uitgeruste webapplicatie voor eventbeheer, ontwikkeld in Angular met een .NET Core-backend. JWT-authenticatie via Auth0 zorgt voor veilige toegang. De app ondersteunt eventregistratie, feedback, en admin-CRUD. Leermoment: Ik heb waardevolle ervaring opgedaan met moderne Angular-features (signals) en het beveiligen van een .NET backend met role-based JWT-authenticatie."
+  },
+  {
+    "id": 12,
+    "title": "Migratie Ninox naar Power Platform (Windows 365)",
+    "summary": "Als Team Lead verantwoordelijk voor de migratie van een Ninox-database naar een Windows 365-omgeving. Ontwikkeling en architectuur van een maatwerk Power App met SharePoint-lijsten als backend. Leermoment: Als Team Lead heb ik geleerd hoe ik een development team effectief aanstuur en een legacy systeem veilig migreer naar een moderne cloud-architectuur."
+  }
+]
 }
