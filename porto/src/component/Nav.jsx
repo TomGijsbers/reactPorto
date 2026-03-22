@@ -1,11 +1,12 @@
 import { AppBar, Toolbar, Typography, Button, Box, IconButton, Drawer, List, ListItem } from "@mui/material";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import ThemeToggle from "./ThemeToggle";
 import MenuIcon from '@mui/icons-material/Menu';
 import { useState, useEffect } from "react";
 import '../views/css/Nav.css';
 
 const NavBar = () => {
+  const location = useLocation();
   const [mobileOpen, setMobileOpen] = useState(false);
   const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 768);
 
@@ -24,7 +25,9 @@ const NavBar = () => {
 
   const navLinks = [
     { text: "Home", path: "/" },
-    { text: "About", path: "/about" },
+    { text: "Over mezelf", path: "/about" },
+    { text: "School Projects", path: "/projects" },
+    { text: "Stage", path: "/stage" },
     // { text: "Art", path: "/art" },
     { text: "Game", path: "/game" }
   ];
@@ -62,7 +65,11 @@ const NavBar = () => {
           {isDesktop ? (
             <div className="nav-links">
               {navLinks.map((item) => (
-                <Link key={item.text} to={item.path} className="nav-button">
+                <Link
+                  key={item.text}
+                  to={item.path}
+                  className={`nav-button${location.pathname === item.path ? ' active' : ''}`}
+                >
                   {item.text}
                 </Link>
               ))}

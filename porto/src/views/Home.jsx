@@ -54,7 +54,7 @@ const Home = () => {
             <h3>Welkom</h3>
             <p>Bekijk mijn groei en projecten tijdens mijn studie.</p>
             <div className="bento-actions">
-              <a href="#projects" className="bento-btn primary">Mijn Projecten</a>
+              <a href="/projects" className="bento-btn primary">Mijn Projecten</a>
               <a href="#contact" className="bento-btn secondary">Meer Info</a>
             </div>
           </div>
@@ -84,12 +84,7 @@ const Home = () => {
             </ul>
           </div>
         </div>
-        
-        {/* School Projects Section */}
-        <div id="projects">
-          <SchoolProjects />
-        </div>
-        
+    
         {/* CV Download Section */}
         <div id="contact">
           <CVDownload darkMode={darkMode} />
