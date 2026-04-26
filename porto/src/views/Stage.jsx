@@ -16,83 +16,87 @@ const Stage = () => {
 
       <main className="stage-container">
         <section className="stage-card">
-          <h1>Stage: Management Rapportage Tool</h1>
-          <h2>FourIQ</h2>
+          <header className="stage-header">
+            <h1>Management Rapportage Tool</h1>
+            <h2 className="company-name">FourIQ</h2>
+            
+            {/* Tech Stack Badges */}
+            <div className="tech-stack">
+              <span className="tech-badge">Ruby on Rails</span>
+              <span className="tech-badge">StimulusJS</span>
+              <span className="tech-badge">MariaDB</span>
+              <span className="tech-badge">Redis</span>
+              <span className="tech-badge">RSpec</span>
+            </div>
+          </header>
 
-          <h3>FourIQ</h3>
-          <p>
-            Tijdens mijn stage werkte ik als software developer bij FourIQ, een
-            bedrijf gespecialiseerd in het meten en monitoren van gebouwinstallaties.
-            Ze helpen grote vastgoedbeheerders, zoals gemeentes en scholenkoepels,
-            om te voldoen aan strenge duurzaamheidswetgeving (zoals de WEii-standaard).
-            Het interne development-team bestaat uit zes personen die continu werken
-            aan de doorontwikkeling van het platform.
-          </p>
+          <div className="stage-content">
+            <div className="content-block">
+              <h3>De Context</h3>
+              <p>
+                Tijdens mijn stage werkte ik als software developer bij FourIQ, een
+                bedrijf gespecialiseerd in het meten en monitoren van gebouwinstallaties.
+                De huidige applicatie draait op een Ruby on Rails backend, gehost via Docker en Kubernetes. 
+                Hoewel het platform perfect inzoomt op losse gebouwen, ontbrak er een centraal managementoverzicht 
+                over de hele vastgoedportefeuille. Klanten kregen hun rapportages via een tijdrovend en foutgevoelig 
+                handmatig Excel-proces.
+              </p>
+            </div>
 
-          <h3>De Technische Context</h3>
-          <p>
-            De huidige applicatie draait op een Ruby on Rails backend, met services
-            zoals MariaDB en Redis gehost via Docker en Kubernetes. Hoewel het platform
-            perfect inzoomt op losse gebouwen, ontbrak er een centraal managementoverzicht
-            over de hele vastgoedportefeuille. Klanten kregen hun rapportages via een
-            tijdrovend en foutgevoelig handmatig Excel-proces dat door medewerkers van
-            FourIQ werd uitgevoerd.
-          </p>
+            <div className="content-block">
+              <h3>Mijn Rol & Architectuur</h3>
+              <p>
+                Mijn hoofdtaak was het ontwerpen en ontwikkelen van een schaalbare, geautomatiseerde 
+                rapportagetool. Na een uitgebreide analyse van de bestaande codebase ben ik afgestapt van 
+                standaard synchrone weergaves en heb ik de focus gelegd op performance en stabiliteit. 
+                Mijn belangrijkste technische realisaties waren:
+              </p>
+              <ul className="custom-list">
+                <li>
+                  <strong>Backend Refactoring:</strong> Migratie van een "Fat Controller" naar modulaire <i>Service Objects</i> en een DTO-patroon (Single Source of Truth).
+                </li>
+                <li>
+                  <strong>Performance Optimalisatie:</strong> Het oplossen van complexe N+1 query problemen door middel van geavanceerde <i>Eager Loading</i> en het reduceren van Garbage Collection responstijden met 25%.
+                </li>
+                <li>
+                  <strong>Asynchrone Frontend:</strong> Ontwikkeling van een interactieve UI via <i>StimulusJS</i> en de Fetch API. Introductie van Lazy Loading per tabelrij met resource-protectie via een native <code>AbortController</code>.
+                </li>
+                <li>
+                  <strong>Context-Aware Export:</strong> Het bouwen van een "Smart Export" naar Excel, waarbij actieve client-side filters via JSON-payloads asynchroon worden verwerkt.
+                </li>
+              </ul>
+            </div>
 
-          <h3>Mijn Rol</h3>
-          <p>
-            Mijn hoofdtaak was het ontwikkelen van een geautomatiseerde management
-            rapportagetool die dit handmatige proces volledig verving. Na een uitgebreide
-            analyse van de bestaande codebase en datastructuur, ben ik aan de slag gegaan
-            met de implementatie. Mijn werkzaamheden bestonden onder andere uit:
-          
-
-          <ul>
-            <li>
-              - Het analyseren en aggregeren van complexe datastructuren vanuit Redis en MariaDB.
-            </li>
-            <li>
-              - Het bouwen van een interactieve frontend met asynchrone, dynamische filters
-              met behulp van Hotwire (Turbo Frames) en Stimulus, zonder page reloads.
-            </li>
-            <li>
-              - Het ontwikkelen van een robuuste backend-service voor het exporteren van
-              geformatteerde Excel-bestanden.
-            </li>
-            <li>
-              - Het naadloos integreren van de code via wekelijkse PR's en code reviews in Git.
-            </li>
-          </ul>
-</p>
-          <h3>Resultaat & Leermomenten</h3>
-          <p>
-            Aan het einde van de stage stond er een snelle, dynamische tool waarmee
-            klanten autonoom hun rapportages kunnen genereren. Dit bespaart FourIQ
-            aanzienlijk veel tijd en elimineert menselijke fouten.
-          </p>
-          <p>
-            Tijdens dit project heb ik enorm veel geleerd over het werken in een professionele
-            Ruby on Rails stack, het schrijven van efficiënte asynchrone UI-componenten en
-            het belang van een gedegen architectuur binnen een professioneel team.
-          </p>
+            <div className="content-block">
+              <h3>Resultaat & Leermomenten</h3>
+              <p>
+                Aan het einde van de stage stond er een snelle, dynamische tool (met een Time-To-First-Byte van &lt; 0.5s) 
+                waarmee klanten autonoom en foutloos hun rapportages kunnen genereren en exporteren.
+              </p>
+              <p>
+                Tijdens dit project heb ik enorm veel geleerd. Niet alleen over het werken in een professionele Ruby on Rails stack, 
+                maar vooral over software-architectuur. Ik heb in de praktijk ervaren wat de impact is van de <i>Global Interpreter Lock (GIL)</i> bij multithreading, 
+                hoe je een database Connection Pool beschermt, en hoe essentieel Code Reviews en DRY-principes zijn in een professioneel team.
+              </p>
+            </div>
+          </div>
 
           <div className="download-section">
-            <h3>Bewijsstukken</h3>
+            <h3>Documentatie & Bewijsstukken</h3>
             <div className="download-grid">
               <a href={PVADocument} download className="download-btn" aria-label="Download Plan van Aanpak">
-                Plan van Aanpak
+                <span className="icon">📄</span> Plan van Aanpak
               </a>
               <a href="#" className="download-btn" aria-label="Download Realisatiedocument">
-                Realisatiedocument
+                <span className="icon">🏗️</span> Realisatiedocument
               </a>
               <a href="#" className="download-btn" aria-label="Download Reflectiedocument">
-                Reflectiedocument
+                <span className="icon">💡</span> Reflectiedocument
               </a>
             </div>
           </div>
         </section>
       </main>
-
     </div>
   );
 };
