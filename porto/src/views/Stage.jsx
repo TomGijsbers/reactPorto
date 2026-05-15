@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import NavBar from "../component/Nav";
 import PVADocument from "../assets/PVA_TomGijsbers.pdf";
+import ReflectieDocument from "../assets/ReflectieDocument_TomGijsbers.pdf";
+import RealisatieDocument from "../assets/Realisatiedocument_TomGijsbers.pdf";
 import "./css/Stage.css";
 
 const Stage = () => {
@@ -87,10 +89,10 @@ const Stage = () => {
               <a href={PVADocument} download className="download-btn" aria-label="Download Plan van Aanpak">
                 <span className="icon">📄</span> Plan van Aanpak
               </a>
-              <a href="#" className="download-btn" aria-label="Download Realisatiedocument">
+              <a href={RealisatieDocument} className="download-btn" aria-label="Download Realisatiedocument">
                 <span className="icon">🏗️</span> Realisatiedocument
               </a>
-              <a href="#" className="download-btn" aria-label="Download Reflectiedocument">
+              <a href={ReflectieDocument} className="download-btn" aria-label="Download Reflectiedocument">
                 <span className="icon">💡</span> Reflectiedocument
               </a>
             </div>

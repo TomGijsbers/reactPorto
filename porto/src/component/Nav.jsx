@@ -26,7 +26,7 @@ const NavBar = () => {
   const navLinks = [
     { text: "Home", path: "/" },
     { text: "Over mezelf", path: "/about" },
-    { text: "School Projects", path: "/projects" },
+    { text: "Overige projecten", path: "/projects" },
     { text: "Stage", path: "/stage" },
     // { text: "Art", path: "/art" },
     { text: "Game", path: "/game" }
