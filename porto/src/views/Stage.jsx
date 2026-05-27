@@ -2,15 +2,23 @@ import React, { useState } from "react";
 import NavBar from "../component/Nav";
 import "./css/Stage.css";
 
+// Wachtwoord direct hier — simpel en het werkt gewoon
+const PASSWORD = "ThomasMore";
+
 const Stage = () => {
   const [darkMode, setDarkMode] = useState(false);
   const [modal, setModal] = useState({ open: false, fileKey: "", label: "" });
   const [input, setInput] = useState("");
   const [error, setError] = useState("");
-  const [loading, setLoading] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
 
   const toggleDarkMode = () => setDarkMode(!darkMode);
+
+  const FILES = {
+    pva: "/documents/PVA_TomGijsbers.pdf",
+    realisatie: "/documents/Realisatiedocument_TomGijsbers.pdf",
+    reflectie: "/documents/ReflectieDocument_TomGijsbers.pdf",
+  };
 
   const openModal = (fileKey, label) => {
     setModal({ open: true, fileKey, label });
@@ -26,59 +34,30 @@ const Stage = () => {
     setShowPassword(false);
   };
 
-  const handleDownload = async (e) => {
+  const handleDownload = (e) => {
     e.preventDefault();
-    setLoading(true);
-    setError("");
-
-    try {
-      const res = await fetch("/api/verify-password", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ password: input, file: modal.fileKey }),
-      });
-
-      const data = await res.json();
-
-      if (!res.ok) {
-        setError(data.error || "Er ging iets mis.");
-        setInput("");
-        setLoading(false);
-        return;
-      }
-
-      const fileRes = await fetch(data.url);
-      const blob = await fileRes.blob();
-      const blobUrl = URL.createObjectURL(blob);
-      const a = document.createElement("a");
-      a.href = blobUrl;
-      a.download = modal.label + ".pdf";
-      a.click();
-      URL.revokeObjectURL(blobUrl);
-
-      closeModal();
-    } catch {
-      setError("Netwerkfout. Probeer opnieuw.");
+    if (input !== PASSWORD) {
+      setError("Ongeldig wachtwoord.");
+      setInput("");
+      return;
     }
-
-    setLoading(false);
+    const a = document.createElement("a");
+    a.href = FILES[modal.fileKey];
+    a.download = modal.label + ".pdf";
+    a.click();
+    closeModal();
   };
 
   return (
     <div className={darkMode ? "dark-mode" : ""}>
       <NavBar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
 
-      {/* Password Modal */}
       {modal.open && (
         <div className="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
           <div className="modal-box" onClick={(e) => e.stopPropagation()}>
             <h3 id="modal-title">🔒 Beveiligd document</h3>
-            <p>
-              Voer het wachtwoord in om <strong>{modal.label}</strong> te downloaden.
-            </p>
+            <p>Voer het wachtwoord in om <strong>{modal.label}</strong> te downloaden.</p>
             <form onSubmit={handleDownload}>
-
-              {/* Input + oog-knop wrapper */}
               <div className="modal-input-wrapper">
                 <input
                   type={showPassword ? "text" : "password"}
@@ -87,7 +66,6 @@ const Stage = () => {
                   value={input}
                   onChange={(e) => setInput(e.target.value)}
                   autoFocus
-                  autoComplete="current-password"
                 />
                 <button
                   type="button"
@@ -96,7 +74,6 @@ const Stage = () => {
                   aria-label={showPassword ? "Verberg wachtwoord" : "Toon wachtwoord"}
                 >
                   {showPassword ? (
-                    // Oog dicht (doorgestreept)
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
                       fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                       <path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94"/>
@@ -104,7 +81,6 @@ const Stage = () => {
                       <line x1="1" y1="1" x2="23" y2="23"/>
                     </svg>
                   ) : (
-                    // Oog open
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
                       fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                       <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
@@ -113,15 +89,10 @@ const Stage = () => {
                   )}
                 </button>
               </div>
-
               {error && <p className="modal-error" role="alert">{error}</p>}
               <div className="modal-actions">
-                <button type="submit" className="download-btn" disabled={loading}>
-                  {loading ? "Bezig..." : "Downloaden"}
-                </button>
-                <button type="button" className="modal-cancel" onClick={closeModal}>
-                  Annuleren
-                </button>
+                <button type="submit" className="download-btn">Downloaden</button>
+                <button type="button" className="modal-cancel" onClick={closeModal}>Annuleren</button>
               </div>
             </form>
           </div>
@@ -133,7 +104,6 @@ const Stage = () => {
           <header className="stage-header">
             <h1>Management Rapportage Tool</h1>
             <h2 className="company-name">FourIQ</h2>
-
             <div className="tech-stack">
               <span className="tech-badge">Ruby on Rails</span>
               <span className="tech-badge">StimulusJS</span>
@@ -206,25 +176,13 @@ const Stage = () => {
           <div className="download-section">
             <h3>Documentatie & Bewijsstukken</h3>
             <div className="download-grid">
-              <button
-                onClick={() => openModal("pva", "Plan van Aanpak")}
-                className="download-btn"
-                aria-label="Download Plan van Aanpak"
-              >
+              <button onClick={() => openModal("pva", "Plan van Aanpak")} className="download-btn">
                 <span className="icon">📄</span> Plan van Aanpak
               </button>
-              <button
-                onClick={() => openModal("realisatie", "Realisatiedocument")}
-                className="download-btn"
-                aria-label="Download Realisatiedocument"
-              >
+              <button onClick={() => openModal("realisatie", "Realisatiedocument")} className="download-btn">
                 <span className="icon">🏗️</span> Realisatiedocument
               </button>
-              <button
-                onClick={() => openModal("reflectie", "Reflectiedocument")}
-                className="download-btn"
-                aria-label="Download Reflectiedocument"
-              >
+              <button onClick={() => openModal("reflectie", "Reflectiedocument")} className="download-btn">
                 <span className="icon">💡</span> Reflectiedocument
               </button>
             </div>
