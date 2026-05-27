@@ -151,3 +151,142 @@
   background-color: #059669;
   transform: translateY(-2px);
 }
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  backdrop-filter: blur(4px);
+}
+
+.modal-box {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 2rem;
+  width: min(420px, 90vw);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+}
+
+.dark-mode .modal-box {
+  background: #1e293b;
+  color: #f8fafc;
+}
+
+.modal-box h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: #0f172a;
+}
+
+.dark-mode .modal-box h3 {
+  color: #f8fafc;
+}
+
+.modal-box p {
+  color: #475569;
+  margin-bottom: 1.2rem;
+  font-size: 0.95rem;
+}
+
+.dark-mode .modal-box p {
+  color: #94a3b8;
+}
+
+.modal-input {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+.modal-input:focus {
+  outline: none;
+  border-color: #10b981;
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2);
+}
+
+.dark-mode .modal-input {
+  background: #0f172a;
+  border-color: #334155;
+  color: #f8fafc;
+}
+
+.modal-error {
+  color: #ef4444;
+  font-size: 0.85rem;
+  margin-bottom: 0.8rem;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 1rem;
+}
+
+.modal-cancel {
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  font-weight: 600;
+  background: transparent;
+  cursor: pointer;
+  color: #475569;
+  transition: background 0.2s;
+}
+
+.modal-cancel:hover {
+  background: #f1f5f9;
+}
+
+.dark-mode .modal-cancel {
+  border-color: #334155;
+  color: #94a3b8;
+}
+
+.dark-mode .modal-cancel:hover {
+  background: #334155;
+}
+
+.download-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Password toggle wrapper */
+.modal-input-wrapper {
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+
+.modal-input-wrapper .modal-input {
+  width: 100%;
+  padding-right: 2.8rem; /* ruimte voor het oog-icoontje */
+  margin-bottom: 0;
+}
+
+.toggle-password-btn {
+  position: absolute;
+  right: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #94a3b8;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  transition: color 0.2s;
+}
+
+.toggle-password-btn:hover {
+  color: #10b981;
+}
