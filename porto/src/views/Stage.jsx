@@ -34,17 +34,16 @@ const Stage = () => {
     setShowPassword(false);
   };
 
-  const handleDownload = (e) => {
+  const handleOpenDocument = (e) => {
     e.preventDefault();
     if (input !== PASSWORD) {
       setError("Ongeldig wachtwoord.");
       setInput("");
       return;
     }
-    const a = document.createElement("a");
-    a.href = FILES[modal.fileKey];
-    a.download = modal.label + ".pdf";
-    a.click();
+    
+    // Open in nieuw tabblad in plaats van direct downloaden
+    window.open(FILES[modal.fileKey], "_blank");
     closeModal();
   };
 
@@ -56,8 +55,8 @@ const Stage = () => {
         <div className="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-title">
           <div className="modal-box" onClick={(e) => e.stopPropagation()}>
             <h3 id="modal-title">🔒 Beveiligd document</h3>
-            <p>Voer het wachtwoord in om <strong>{modal.label}</strong> te downloaden.</p>
-            <form onSubmit={handleDownload}>
+            <p>Voer het wachtwoord in om {modal.label} te openen.</p>
+            <form onSubmit={handleOpenDocument}>
               <div className="modal-input-wrapper">
                 <input
                   type={showPassword ? "text" : "password"}
@@ -91,7 +90,7 @@ const Stage = () => {
               </div>
               {error && <p className="modal-error" role="alert">{error}</p>}
               <div className="modal-actions">
-                <button type="submit" className="download-btn">Downloaden</button>
+                <button type="submit" className="download-btn">Openen</button>
                 <button type="button" className="modal-cancel" onClick={closeModal}>Annuleren</button>
               </div>
             </form>
@@ -115,66 +114,39 @@ const Stage = () => {
 
           <div className="stage-content">
             <div className="content-block">
-              <h3>De Context</h3>
               <p>
-                Tijdens mijn stage werkte ik als software developer bij FourIQ, een bedrijf
-                gespecialiseerd in het meten en monitoren van gebouwinstallaties. De huidige
-                applicatie draait op een Ruby on Rails backend, gehost via Docker en Kubernetes.
-                Hoewel het platform perfect inzoomt op losse gebouwen, ontbrak er een centraal
-                managementoverzicht over de hele vastgoedportefeuille. Klanten kregen hun
-                rapportages via een tijdrovend en foutgevoelig handmatig Excel-proces.
+                Tijdens mijn afstudeerstage bij FourIQ werkte ik als software developer aan een platform dat gebouwinstallaties meet en monitort. De applicatie draait op een Ruby on Rails backend, gehost via Docker en Kubernetes. Hoewel het platform perfect inzoomt op losse gebouwen, ontbrak er een centraal managementoverzicht over de hele vastgoedportefeuille. Klanten kregen hun rapportages via een tijdrovend en foutgevoelig handmatig Excel-proces.
               </p>
             </div>
 
             <div className="content-block">
-              <h3>Mijn Rol & Architectuur</h3>
               <p>
-                Mijn hoofdtaak was het ontwerpen en ontwikkelen van een schaalbare, geautomatiseerde
-                rapportagetool. Na een uitgebreide analyse van de bestaande codebase ben ik afgestapt
-                van standaard synchrone weergaves en heb ik de focus gelegd op performance en stabiliteit.
-                Mijn belangrijkste technische realisaties waren:
+                Doel van de stage was het ontwerpen en ontwikkelen van een schaalbare, geautomatiseerde rapportagetool. Na een uitgebreide analyse ben ik afgestapt van standaard synchrone weergaves en heb ik de focus gelegd op performance en stabiliteit. Mijn belangrijkste technische realisaties waren:
               </p>
               <ul className="custom-list">
                 <li>
-                  <strong>Backend Refactoring:</strong> Migratie van een "Fat Controller" naar modulaire{" "}
-                  <i>Service Objects</i> en een DTO-patroon (Single Source of Truth).
+                  Backend Refactoring: Migratie van een "Fat Controller" naar modulaire Service Objects en een DTO-patroon (Single Source of Truth).
                 </li>
                 <li>
-                  <strong>Performance Optimalisatie:</strong> Het oplossen van complexe N+1 query problemen
-                  door middel van geavanceerde <i>Eager Loading</i> en het reduceren van Garbage Collection
-                  responstijden met 25%.
+                  Performance Optimalisatie: Het oplossen van complexe N+1 query problemen door middel van geavanceerde Eager Loading en het reduceren van responstijden met 25%.
                 </li>
                 <li>
-                  <strong>Asynchrone Frontend:</strong> Ontwikkeling van een interactieve UI via{" "}
-                  <i>StimulusJS</i> en de Fetch API. Introductie van Lazy Loading per tabelrij met
-                  resource-protectie via een native <code>AbortController</code>.
+                  Asynchrone Frontend: Ontwikkeling van een interactieve UI via StimulusJS en de Fetch API. Introductie van Lazy Loading per tabelrij met resource-protectie via een native AbortController.
                 </li>
                 <li>
-                  <strong>Context-Aware Export:</strong> Het bouwen van een "Smart Export" naar Excel,
-                  waarbij actieve client-side filters via JSON-payloads asynchroon worden verwerkt.
+                  Context-Aware Export: Het bouwen van een "Smart Export" naar Excel, waarbij actieve client-side filters via JSON-payloads asynchroon worden verwerkt.
                 </li>
               </ul>
             </div>
 
             <div className="content-block">
-              <h3>Resultaat & Leermomenten</h3>
               <p>
-                Aan het einde van de stage stond er een snelle, dynamische tool (met een
-                Time-To-First-Byte van &lt; 0.5s) waarmee klanten autonoom en foutloos hun
-                rapportages kunnen genereren en exporteren.
-              </p>
-              <p>
-                Tijdens dit project heb ik enorm veel geleerd. Niet alleen over het werken in een
-                professionele Ruby on Rails stack, maar vooral over software-architectuur. Ik heb in
-                de praktijk ervaren wat de impact is van de <i>Global Interpreter Lock (GIL)</i> bij
-                multithreading, hoe je een database Connection Pool beschermt, en hoe essentieel Code
-                Reviews en DRY-principes zijn in een professioneel team.
+                Aan het einde van de stage stond er een snelle, dynamische tool waarmee klanten autonoom en foutloos hun rapportages kunnen genereren en exporteren.
               </p>
             </div>
           </div>
 
           <div className="download-section">
-            <h3>Documentatie & Bewijsstukken</h3>
             <div className="download-grid">
               <button onClick={() => openModal("pva", "Plan van Aanpak")} className="download-btn">
                 <span className="icon">📄</span> Plan van Aanpak

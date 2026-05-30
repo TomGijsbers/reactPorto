@@ -26,10 +26,10 @@ const NavBar = () => {
   const navLinks = [
     { text: "Home", path: "/" },
     { text: "Over mezelf", path: "/about" },
-    { text: "Overige projecten", path: "/projects" },
     { text: "Stage", path: "/stage" },
+    { text: "Projecten", path: "/projects" },
     // { text: "Art", path: "/art" },
-    { text: "Game", path: "/game" }
+    // { text: "Game", path: "/game" }
   ];
 
   const drawer = (
