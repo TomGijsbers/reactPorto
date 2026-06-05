@@ -2,8 +2,17 @@ import React, { useState } from "react";
 import NavBar from "../component/Nav";
 import "./css/Stage.css";
 
-// Wachtwoord direct hier — simpel en het werkt gewoon
-const PASSWORD = "ThomasMore";
+// We slaan NOOIT een wachtwoord in plaintext op.
+// Dit is de SHA-256 hash van het woord "ThomasMore"
+const PASSWORD_HASH = "b76a388515c760c37494bef7a6006de2c62d253604b822fc0d113c7b405ef817";
+
+// Helper functie om de input van de gebruiker te hashen
+const hashPassword = async (password) => {
+  const msgBuffer = new TextEncoder().encode(password);
+  const hashBuffer = await crypto.subtle.digest('SHA-256', msgBuffer);
+  const hashArray = Array.from(new Uint8Array(hashBuffer));
+  return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+};
 
 const Stage = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -34,9 +43,13 @@ const Stage = () => {
     setShowPassword(false);
   };
 
-  const handleOpenDocument = (e) => {
+  const handleOpenDocument = async (e) => {
     e.preventDefault();
-    if (input !== PASSWORD) {
+    
+    // Hash de input van de gebruiker en vergelijk deze met onze opgeslagen hash
+    const hashedInput = await hashPassword(input);
+    
+    if (hashedInput !== PASSWORD_HASH) {
       setError("Ongeldig wachtwoord.");
       setInput("");
       return;
@@ -137,6 +150,13 @@ const Stage = () => {
                   Context-Aware Export: Het bouwen van een "Smart Export" naar Excel, waarbij actieve client-side filters via JSON-payloads asynchroon worden verwerkt.
                 </li>
               </ul>
+            </div>
+
+            <div className="content-block">
+              <h3>De Impact (Resultaat)</h3>
+              <p>
+                Waar het genereren van een portfolio-brede rapportage voorheen een handmatig en foutgevoelig Excel-proces was dat uren in beslag nam, kunnen gebouwbeheerders dit nu autonoom binnen enkele seconden genereren. De tool zorgt voor data-integriteit (door missende waarden expliciet als 'n.v.t.' te labelen) en exporteert via het 'What You See Is What You Get'-principe direct naar Excel.
+              </p>
             </div>
 
             <div className="content-block">

@@ -16,12 +16,12 @@
     position: relative;
   }
   
-  .project-card:hover {
+  /* .project-card:hover {
     transform: translateY(-5px);
     background: rgba(255, 255, 255, 0.85);
     box-shadow: 0 30px 60px -10px rgba(22, 163, 74, 0.15);
     border-color: #fff;
-  }
+  } */
   
   .project-card::before {
     content: '';
@@ -37,10 +37,10 @@
     transition: all 0.3s ease;
   }
   
-  .project-card:hover::before {
+  /* .project-card:hover::before {
     height: 8px;
     opacity: 1;
-  }
+  } */
   
   .project-content {
     flex-grow: 1;
@@ -92,10 +92,10 @@
     transition: all 0.3s ease;
   }
   
-  .project-card:hover .tech-chip {
+  /* .project-card:hover .tech-chip {
     background: #dcfce7;
     border-color: #86efac;
-  }
+  } */
   
   .project-button {
     background: linear-gradient(135deg, #16a34a, #15803d);
@@ -114,12 +114,12 @@
     align-self: flex-start;
   }
   
-  .project-button:hover {
-    background: #f0fdf4; /* Match Bento Primary Hover */
+  /* .project-button:hover {
+    background: #f0fdf4; 
     color: #15803d;
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(22, 163, 74, 0.2);
-  }
+  } */
   
   /* Projects container styling */
   .projects-container {
@@ -239,10 +239,10 @@
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
   }
   
-  body.dark-mode .project-card:hover {
+  /* body.dark-mode .project-card:hover {
     background: rgba(30, 41, 59, 0.8);
     border-color: rgba(34, 197, 94, 0.3);
-  }
+  } */
   
   body.dark-mode .project-card::before {
     background: linear-gradient(90deg, #22c55e, #4ade80);
@@ -263,17 +263,17 @@
     border-color: rgba(34, 197, 94, 0.3);
   }
   
-  body.dark-mode .project-card:hover .tech-chip {
+  /* body.dark-mode .project-card:hover .tech-chip {
     background: rgba(22, 163, 74, 0.2);
     border-color: #4ade80;
-  }
+  } */
   
   body.dark-mode .project-button {
     background: linear-gradient(135deg, #22c55e, #16a34a);
     color: #020617;
   }
   
-  body.dark-mode .project-button:hover {
+  /* body.dark-mode .project-button:hover {
     background: rgba(22, 163, 74, 0.2);
     color: #4ade80;
-  }
+  } */

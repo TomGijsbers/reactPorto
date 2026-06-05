@@ -99,14 +99,15 @@
 }
 
 .tab-pane p {
-    color: #4b5563;
+    color: #000000;
     line-height: 1.8;
-    font-size: 1.1rem;
+    font-size: 1.125rem;
     margin-bottom: 1.8rem;
     text-align: left;
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
+    font-weight: bold;
 }
 
 .tab-pane strong {
@@ -225,6 +226,7 @@
 
 .dark-mode .tab-pane p {
     color: #cbd5e1;
+    font-weight: bold;
 }
 
 .dark-mode .tab-pane strong {
