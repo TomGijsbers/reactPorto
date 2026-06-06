@@ -8,25 +8,26 @@ const CVDownload = ({ darkMode }) => {
     <div className={`cv-section ${darkMode ? "cv-section-dark" : ""}`}>
       <h2 className="cv-title">Laten we samenwerken</h2>
       <p className="cv-description">
-        Download mijn CV voor een volledig overzicht van mijn vaardigheden, ervaring en opleiding, of neem direct contact op.
+        Bekijk mijn CV voor een volledig overzicht van mijn vaardigheden, ervaring en opleiding, of neem direct contact op.
       </p>
 
       <div className="cv-buttons">
         <a
           href={cvPDF}
+          target="_blank"
+          rel="noopener noreferrer"
           className="cv-button"
-          download="TomGijsbers_CV.pdf"
           onClick={() => {
             if (window.gtag) {
-              window.gtag('event', 'download_cv', {
+              window.gtag('event', 'view_cv', {
                 event_category: 'CV',
-                event_label: 'CV Download Button',
+                event_label: 'CV View Button',
                 value: 1
               });
             }
           }}
         >
-          CV Downloaden
+          CV Bekijken
         </a>
 
         <a
