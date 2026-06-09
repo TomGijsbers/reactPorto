@@ -52,10 +52,6 @@ const Home = () => {
           <div className="bento-card action-card">
             <h3>Documentatie & Bewijslast</h3>
             <p>Alle projecten, technische analyses en afstudeerdocumenten staan geoptimaliseerd klaar voor beoordeling.</p>
-            <div className="bento-actions">
-              <a href="/projects" className="bento-btn primary">Mijn Projecten</a>
-              <a href="/stage" className="bento-btn secondary">Naar Stage</a>
-            </div>
           </div>
 
           {/* 3. Jury Bio Tile - Inline style forceren naar volle breedte */}
