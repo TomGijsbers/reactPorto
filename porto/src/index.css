@@ -36,15 +36,7 @@ h1 {
 }
 
 /* Make ALL paragraphs BOLD and readable */
-p,
-li,
-dd {
-  font-weight: bold;
-  font-size: 1.0625rem;
-  line-height: 1.8;
-  color: #000000;
-  margin-bottom: 1rem;
-}
+
 
 
 

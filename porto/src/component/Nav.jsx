@@ -29,7 +29,7 @@ const NavBar = () => {
     { text: "Stage", path: "/stage" },
     { text: "Projecten", path: "/projects" },
     // { text: "Art", path: "/art" },
-    // { text: "Game", path: "/game" }
+    { text: "Game", path: "/game" }
   ];
 
   const drawer = (

@@ -80,13 +80,6 @@
   color: #e2e8f0;
 }
 
-.stage-content p {
-  line-height: 1.7;
-  margin-bottom: 1rem;
-  color: #000000;
-  font-weight: bold;
-  font-size: 1.0625rem;
-}
 
 .dark-mode .stage-content p {
   color: #94a3b8;

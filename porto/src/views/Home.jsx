@@ -1,28 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import NavBar from "../component/Nav";
-// Import simple versions without Material UI dependencies
-import SchoolProjects from "../component/SchoolProjects";
-import CVDownload from "../component/CVDownload";
 import Footer from "../component/Footer";
 import "./css/Home.css";
-import "../tailwind.css"; // Import Tailwind CSS
+import "../tailwind.css"; 
 
 const Home = () => {
   // State for dark mode
   const [darkMode, setDarkMode] = useState(false);
-
-  // Check for user's preferred color scheme
-  // useEffect(() => {
-  //   const prefersDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  //   setDarkMode(prefersDarkMode);
-
-  //   // Listen for changes in color scheme preference
-  //   const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-  //   const handleChange = (e) => setDarkMode(e.matches);
-  //   mediaQuery.addEventListener('change', handleChange);
-
-  //   return () => mediaQuery.removeEventListener('change', handleChange);
-  // }, []);
 
   // Toggle dark mode
   const toggleDarkMode = () => {
@@ -35,97 +19,68 @@ const Home = () => {
       <div className="home-container">
         {/* Modern Bento Grid Layout */}
         <div className="bento-grid">
+          
           {/* 1. Main Hero Tile */}
           <div className="bento-card hero-card">
             <div className="status-badge">
               <span className="status-dot"></span>
-              Kandidaat Bachelor Toegepaste Informatica
+              Software Engineer @ Vencomatic Group
             </div>
             <h1 className="bento-title">Tom Gijsbers</h1>
-            <h2 className="bento-subtitle">Klaar voor de praktijk als Software Engineer</h2>
+            <h2 className="bento-subtitle">Bachelor Toegepaste Informatica</h2>
             <p className="bento-text">
-              Gedreven door technologie, architectuur en innovatie. Mijn reis van de maakindustrie naar de IT weerspiegelt mijn passie voor een leven lang leren, technisch inzicht en een no-nonsense werkmentaliteit.
+              Gedreven door technologie, architectuur en innovatie. Mijn reis van de precisie in de metaalindustrie naar de logica van de IT weerspiegelt mijn passie voor een leven lang leren, technisch inzicht en een no-nonsense werkmentaliteit.
             </p>
           </div>
-
-          {/* 2. Action Tile */}
+      {/* 2. Action Tile */}
           <div className="bento-card action-card">
-            <h3>Documentatie & Bewijslast</h3>
-            <p>Alle projecten, technische analyses en afstudeerdocumenten staan geoptimaliseerd klaar voor beoordeling.</p>
+            <h3>Projecten & Architectuur</h3>
+            <p>Van complexe database-optimalisaties tot strakke frontend-interfaces: duik in de techniek, code en architecturale keuzes achter mijn werk.</p>
           </div>
 
-          {/* 3. Jury Bio Tile - Inline style forceren naar volle breedte */}
-          <div className="bento-card bio-card" style={{ gridColumn: "1 / -1", textAlign: "center" }}>
-            <h3>Verantwoording & Portfolio</h3>
+
+          {/* 2. Welcome & Intro Tile (Replaces the Jury message) */}
+          <div className="bento-card bio-card" style={{ gridColumn: "1 / -1",  }}>
+            <h3>Welkom op mijn portfolio</h3>
             <p>
-              Beste examencommissie, welkom. Dit portfolio vormt het sluitstuk van mijn opleiding. Met succes heb ik de afgelopen tijd bewezen dat ik in staat ben om complexe bedrijfsprocessen te vertalen naar robuuste, schaalbare Full-Stack webapplicaties.
+              Als Full-Stack Software Engineer combineer ik mijn hands-on ervaring uit de maakindustrie met moderne IT-architectuur. Ik ben gespecialiseerd in het doorgronden van complexe bedrijfsprocessen en het vertalen hiervan naar robuuste, schaalbare webapplicaties. 
               <br /><br />
-              Via de documentatie en projecten op deze website lever ik het keiharde bewijs dat ik de vereiste HBO-competenties op het gebied van softwareontwikkeling, architectuur en data-integriteit volledig beheers. Ik ben klaar voor de beroepspraktijk en verdien hiermee de titel Bachelor Toegepaste Informatica.
+              Op deze website vind je een overzicht van mijn projecten, mijn afstudeerstage en de technische oplossingen die ik heb gerealiseerd om data-integriteit en performance te garanderen.
             </p>
           </div>
-        </div>
 
-
-
-        <div className="bento-card bio-card">
-          <h3>Afstudeerstage: FourIQ</h3>
-          <p>
-            Tijdens mijn afstudeerperiode heb ik succesvol een geavanceerde Management Rapportage Tool ontworpen en ontwikkeld. Van het oplossen van complexe database-queries tot het bouwen van een interactieve interface voor gebouwbeheerders.
-          </p>
-        </div>
-        <div className="bento-card bio-card" style={{ marginTop: "1.5rem", textAlign: "center" }}>
-          <h3>Naar Software Engineer</h3>
-          <p>
-            Inmiddels vertaal ik bedrijfsprocessen naar schaalbare IT-architectuur. Met ervaring in Ruby on Rails, React, en Python IoT-systemen, ben ik in staat om zowel strakke interfaces als veilige backend-systemen te realiseren. Recent gestart als Software Engineer, klaar om de theorie volledig in de praktijk te brengen.
-          </p>
-        </div>
-
-        <div className="jury-banner">
-          ✨ AI-Gedreven Ontwikkeling: Dit portfolio en de bijbehorende processen zijn deels tot stand gekomen met ondersteuning van geavanceerde AI-tools.
-        </div>
-
-        {/* <div className="bento-card bio-card">
-            <h3>Mijn Verhaal</h3>
+          {/* 3. Experience Tile (Combined Stage & New Job) */}
+          <div className="bento-card bio-card">
+            <h3>Van Stage naar Praktijk</h3>
             <p>
-              Van de precisie van de metaalindustrie naar de logica van IT. 
-              Mijn achtergrond illustreert mijn aanpassingsvermogen en toewijding 
-              aan voortdurend leren. Momenteel bachelor student Toegepaste Informatica.
+              Tijdens mijn afstudeerstage bij FourIQ heb ik met succes een geavanceerde Management Rapportage Tool ontwikkeld, waarbij de focus lag op backend-optimalisatie (Eager Loading, Service Objects) en asynchrone frontend-interfaces. Inmiddels breng ik deze theorie volledig in de praktijk in mijn rol als Software Engineer bij Vencomatic Group, waar we intelligente oplossingen bouwen voor de wereldwijde agrarische sector.
             </p>
-          </div> */}
-        {/* 3. Bio Tile */}
-        {/* <div className="bento-card bio-card">
-            <h3>Mijn Verhaal</h3>
-            <p>
-              Van de precisie van de metaalindustrie naar de logica van IT. 
-              Mijn achtergrond illustreert mijn aanpassingsvermogen en toewijding 
-              aan voortdurend leren. Momenteel bachelor student Toegepaste Informatica.
-            </p>
-          </div> */}
+          </div>
 
-        {/* 4. Skills Tile */}
-        {/* <div className="bento-card skills-card">
-            <h3>Expertise</h3>
+          {/* 4. Skills Tile */}
+          <div className="bento-card skills-card">
+            <h3>Expertise & Stack</h3>
             <ul className="bento-skills-list">
-              <li>React & Angular</li>
-              <li>MongoDB & SQL</li>
+              <li>Ruby on Rails & C#</li>
+              <li>React, StimulusJS & Hotwire</li>
+              <li>SQL & Database Optimalisatie</li>
+              <li>Python (IoT & Data)</li>
               <li>Flutter Mobile</li>
-              <li>Data Analysis</li>
-              <li>TIG & MIG Welding (Steel/SS/Alu)</li>
-              <li>Robot Welding (Cloos Group & Valk Welding)</li>
-              <li>Problem Solving</li>
-              <li>Modern UI/UX</li>
+              <li>BPMN & Procesanalyse</li>
+              <li>TIG & MIG Lassen (Staal/RVS/Alu)</li>
+              <li>Robotprogrammering</li>
             </ul>
-          </div> */}
+          </div>
+
+        </div>
+
+        {/* Footer Note */}
+        <div className="jury-banner" style={{ marginTop: "2rem", opacity: 0.8, fontSize: "0.9rem" }}>
+          ✨ Trots afgestudeerd: De projecten op dit portfolio hebben bijgedragen aan het succesvol afronden van mijn bachelorproef.
+        </div>
+
       </div>
-
-
-
-      {/* CV Download Section */}
-      {/* <div id="contact">
-          <CVDownload darkMode={darkMode} />
-        </div> */}
     </div>
-    // </div>
   );
 };
 
